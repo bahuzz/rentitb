@@ -1,0 +1,1962 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>listing_page - rentlib</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="listing-page">
+<input type="text" id="hidden-text" value="" style="position: fixed;left: -1000px;" />
+<div class="all">
+	<header class="container-fluid header header-list payment">
+		<div class=" row header-top">
+			<div class="header-top-list clearfix">
+				<a class="logo" href="#">logo</a>
+				<div class="col-md-9 col-md-offset-3 hlinks">
+					<span class="list-btn-wrap">
+						 <button type="button" class="btn btn-danger ">List Your Item</button>
+					</span><!-- list-btn-wrap -->
+					<div class="help">
+					    <div class="btn-group">
+						    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+						        Help
+						        <span class="help-icon"></span>
+						      </button>
+						    <ul class="dropdown-menu">
+						      	<li><a href="#">How do i rent my items on Rentitb?</a></li>
+								<li><a href="#">How can i promote my listing?</a></li>
+								<li><a href="#">How is the wevb is protected?</a></li>
+								<li><a href="#">View all FAQs</a></li>
+								<i class="help-arrow"></i>
+						    </ul>
+					  </div>
+					</div>
+					<div class="avatar-container">
+							<img src="img/avatar.jpg" height="53" width="53" alt="">
+							<div class="btn-group">
+								<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="account">
+							        Ilya Boruhov
+							        <span class="help-icon"></span>
+						        </button>
+						        <ul class="dropdown-menu" area-labelledby="account">
+							      	<li><a href="#">Dashboard</a></li>
+									<li><a href="#">My Listing</a></li>
+									<li><a href="#">Orders to My Listing</a></li>
+									<li><a href="#">My Reservation</a></li>
+									<li><a href="#">Items I've Rent</a></li>
+									<li><a href="#">My Wish Lists</a></li>
+									<hr>
+									<li><a href="#">Language</a></li>
+									<hr>
+									<li><a href="#">Edit Profile</a></li>
+									<li><a href="#">Account</a></li>
+									<li><a href="#">Log Out</a></li>
+									<i class="help-arrow"></i>
+						    	</ul>
+					        </div>
+					</div>
+					<div class="pull-right notification">
+
+						<span class="notif-btn" data-toggle="dropdown" id="notif-btn">
+
+							<i class="notif-icon"></i>
+
+							<span class="notif-num">5</span>
+
+						</span>
+
+
+
+						 <ul class="dropdown-menu notif-menu" area-labelledby="notif-btn">
+
+						      	<li>
+
+						      		<a href="#" class="notif-mess">
+
+						      			<span class="ava-block ava-small">
+
+						  					<img src="uploads/images/i-ava2.jpg" alt="" />
+
+						  				</span><!-- ava-block -->
+
+						  				<span class="nt-cont">
+
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+
+						  				</span><!--  nt-cont -->					  					
+
+						  				<span class="nt-label"><i class="nt-star"></i></span><!--  nt-label -->
+
+						      		</a>
+
+						      	</li>
+
+								<li>
+
+						      		<a href="#" class="notif-mess">
+
+						      			<span class="ava-block ava-small">
+
+						  					<img src="uploads/images/i-ava2.jpg" alt="" />
+
+						  				</span><!-- ava-block -->
+
+						  				<span class="nt-cont">
+
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+
+						  				</span><!--  nt-cont -->					  					
+
+						  				<span class="nt-label"><i class="nt-let"></i></span><!--  nt-label -->
+
+						      		</a>
+
+						      	</li>
+
+						      	<li>
+
+						      		<a href="#" class="notif-mess">
+
+						  				<span class="nt-cont">
+
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+
+						  				</span><!--  nt-cont -->					  					
+
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+
+						      		</a>
+
+						      	</li>
+
+						      	<li>
+
+						      		<a href="#" class="notif-mess">
+
+						      			<span class="nt-img">
+
+						  					<img src="uploads/images/notif.jpg" alt="" />
+
+						  				</span><!-- nt-img -->
+
+						  				<span class="nt-cont">
+
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+
+						  					<span class="nt-text">Did you deliverd your item to Josh?</span><!--  nt-text -->	
+
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+
+						  					<button class="btn btn-primary nt-btn">Yes, I Deliverd</button>
+
+						  					<button class="btn btn-default nt-btn">No, I Don’t</button>
+
+						  				</span><!--  nt-cont -->					  					
+
+						  				<span class="nt-label"><i class="nt-star"></i></span><!--  nt-label -->
+
+						      		</a>
+
+						      	</li>
+
+						      	<li>
+
+						      		<a href="#" class="notif-mess">
+
+						      			<span class="nt-img">
+
+						  					<img src="uploads/images/notif.jpg" alt="" />
+
+						  				</span><!-- nt-img -->
+
+						  				<span class="nt-cont">
+
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+
+						  					<span class="nt-text">Did you deliverd your item to Josh?</span><!--  nt-text -->	
+
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+
+						  					<button class="btn btn-primary nt-btn">Yes, I Get</button>
+
+						  					<button class="btn btn-default nt-btn">No, I Don’t</button>
+
+						  				</span><!--  nt-cont -->					  					
+
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+
+						      		</a>
+
+						      	</li>
+
+
+
+						      	<li>
+
+						      		<a href="#" class="notif-mess notif-mess-success">
+
+						      			<span class="nt-img">
+
+						  					<img src="uploads/images/notif.jpg" alt="" />
+
+						  				</span><!-- nt-img -->
+
+						  				<span class="nt-cont">
+
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+
+						  					<span class="nt-text">The deal was seccessfully approved by two sides!</span><!--  nt-text -->	
+
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+
+						  				</span><!--  nt-cont -->	
+
+						  				<i class="hands-s nt-hands"></i>
+
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+
+						      		</a>
+
+						      	</li>
+
+						      	<li class="nt-bot">
+
+						      		<a href="#" class="nt-clear">Clear all</a>
+
+						      	</li>
+						      	<i class="help-arrow"></i>
+						    </ul>
+
+
+
+	<!--  this is the category block for notification  -->
+
+	<!--  tif you want see it - delete style="right: 9999px !important"  -->	
+
+
+
+						     <ul class="dropdown-menu notif-menu" area-labelledby="notif-btn" style="right: 9999px !important">
+
+						      	<li>
+
+						      		<a href="#" class="notif-cat notif-cat1">
+
+						      			<span class="nt-cat-label"><i class="nt-cat-let"></i></span><!--  nt-label -->
+
+						  				<span class="nt-cat-cont">
+
+						  					<span class="nt-cat-title">3 New Messages</span><!--  nt-title -->	
+
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+
+						  				</span><!--  nt-cont -->					  					
+
+						      		</a>
+
+						      	</li>
+
+
+
+						      	<li>
+
+						      		<a href="#" class="notif-cat notif-cat2">
+
+						      			<span class="nt-cat-label"><i class="nt-cat-com"></i></span><!--  nt-label -->
+
+						  				<span class="nt-cat-cont">
+
+						  					<span class="nt-cat-title">5 New Notifications</span><!--  nt-title -->	
+
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+
+						  				</span><!--  nt-cont -->					  					
+
+						      		</a>
+
+						      	</li>
+
+
+
+						      	<li>
+
+						      		<a href="#" class="notif-cat notif-cat3">
+
+						      			<span class="nt-cat-label"><i class="nt-cat-star"></i></span><!--  nt-label -->
+
+						  				<span class="nt-cat-cont">
+
+						  					<span class="nt-cat-title">3 New Messages</span><!--  nt-title -->	
+
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+
+						  				</span><!--  nt-cont -->					  					
+
+						      		</a>
+
+						      	</li>
+
+						      	<li class="nt-bot">
+
+						      		<a href="#" class="nt-clear">Clear all</a>
+
+						      	</li>
+						      	<i class="help-arrow"></i>
+						    </ul>
+
+						    
+
+					</div><!-- notification -->
+
+					<div id="slide-search" class="slide-search">
+
+					    <form>
+
+					        <input class="slide-search__input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+
+					        <input class="slide-search__submit" type="submit" value="">
+
+					        <span class="slide-search-icon"></span>
+
+					    </form>
+
+					</div>
+
+					<div class="mobile-search">
+
+						<input type="text" class="form-control" placeholder="Enter your search here">
+
+					</div>
+
+				</div><!-- hlinks -->
+			</div>
+			</div><!--  header-top  -->
+
+			<div class="hero-text">
+				<h2>List your item</h2>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean euismod.</h3>
+			</div>
+
+		<div class="row header-title header-title-dash">
+			<h2 class="header-top-title"></h2>
+			<p class="slogan"></p>
+		</div><!-- header-title -->	
+	</header><!-- header -->
+
+	<div class="container-fluid listing-content">
+
+		<div class="row">
+
+			<!-- Nav tabs -->
+
+	<form class="global-listing-form" id="gl-form" method="post" role="form">
+
+		<div class="listing-tabs">
+
+			<ul class="nav nav-tabs">
+
+			  <li class="active"><a href="#basic-info" data-toggle="tab"><i class="tab-icon basic-info-icon"></i><span>Basic Info</span> <i class="tab-arr"></i></a></li>
+
+			  <li><a href="#period" data-toggle="tab"><i class="tab-icon period-icon"></i><span>Period</span><i class="tab-arr"></i></a></li>
+
+			  <li><a href="#pricing" data-toggle="tab"><i class="tab-icon pricing-icon"></i><span>Pricing</span><i class="tab-arr"></i></a></li>
+
+			  <li><a href="#photos" data-toggle="tab"><i class="tab-icon photos-icon"></i><span>Photos</span><i class="tab-arr"></i></a></li>
+
+			  <li><a href="#rules" data-toggle="tab"><i class="tab-icon rules-icon"></i><span>Rules</span><i class="tab-arr"></i></a></li>
+
+			  <li><a href="#tab-location" data-toggle="tab"><i class="tab-icon location-icon"></i><span>Location</span><i class="tab-arr ok"></i></a></li>
+
+			</ul>
+
+
+
+			<div class="lt-link">
+				<input type="submit" class="btn btn-primary list-btn" value="List my Item" />
+
+			</div><!-- lt-link -->
+
+		</div><!-- listing-tabs -->
+
+
+
+		<!-- Tab panes -->
+
+		<div class="tab-content listing-tab-content">
+
+		  <div class="tab-pane active" id="basic-info">
+
+		  	<div class="tab-cont-wrapper">
+
+		  		<h2>Basic Item Info</h2>
+
+		  
+
+		  	<div class="basic-item-form" id="basic-form">
+
+			  <div class="form-group">
+
+			  	<label class="label-inline">Item Name</label>
+
+			   <input name="username" type="text" class="form-control" placeholder="Write Item Name (Required)" data-validation="required" />
+
+			    <i class="ok"></i>
+
+			  </div>
+
+
+
+			  <div class="form-group">
+
+			  	<label class="label-inline">Item Description</label>
+
+			    <textarea name="textarea" class="form-control" placeholder="Write Item Description (Required)"  data-validation="required"></textarea>
+
+			  </div><!-- form-group -->
+
+
+
+			  	<div class="checkbox-wrap">
+
+			  		<input id="cfirst" type="checkbox" name="first" checked class="styled" />
+
+        			<label for="cfirst" class="check-label">I can deliver the item to the customers location</label>
+
+        			<i class="q-icon"><span class="mytooltip">
+
+        					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+        					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+        					<i></i>
+
+        				</span></i>
+
+			  	</div><!-- checkbox-wrap -->
+
+
+
+			  	<div class="checkbox-wrap">
+
+			  		<input id="c2" type="checkbox" name="first" class="styled" checked />
+
+        			<label for="c2" class="check-label">I can pick up the item from the customers location</label>
+
+        				<i class="q-icon"><span class="mytooltip">
+
+        					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+        					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+        					<i></i>
+
+        				</span></i>
+
+			  	</div><!-- checkbox-wrap -->
+
+			</div><!--  basic-form  -->
+
+				</div><!-- tab-cont-wrapper -->
+
+		  </div><!-- tab-pane -->
+
+
+
+		  <div class="tab-pane" id="period">
+
+		  	<div class="tab-cont-wrapper">
+
+		  		<h2>Item Periud <small>When is your item available for renting?</small></h2>
+
+		  	</div><!-- tab-cont-wrapper -->
+
+		  	<div class="period-item always-item">
+
+		  		<div class="clearfix period-top">
+
+		  			<i class="always-icon"></i>
+
+		  			<h3>Always <small>My item availibale all the time.</small></h3>
+
+		  		</div><!-- clearfix period-top -->
+
+
+
+		  		<div class="period-content">
+
+		  			<div class="period-cont">
+
+		  				<p class="per-cont-p">
+
+		  					<span class="per-cont-span">Minimum renting period </span>
+
+		  					<span class="select">
+
+		  						<select class="custom-select">
+
+			  						<option>1 Hour</option>
+
+			  						<option>2 Hour</option>
+
+			  						<option>3 Hour</option>
+
+			  					</select>
+
+		  					</span>
+
+		  				</p>
+
+
+
+		  				<p class="per-cont-p">
+
+		  					<span class="per-cont-span">Ask for my confirmation to rent</span>
+
+		  					<span class="sel390">
+
+		  						<select class="custom-select">
+
+		  						<option>No - enable automatically when someone pays</option>
+
+		  						<option>No - enable automatically when someone pays</option>
+
+		  						<option>No - enable automatically when someone pays</option>
+
+		  					</select>
+
+		  					</span>	
+
+		  				</p>
+
+
+
+		  			</div><!-- period-cont -->
+
+
+
+		  			<div class="period-bot">
+
+		  				<div class="check">
+
+		  					<input id="def-check1" type="checkbox" class="styled" />
+
+        					<label for="def-check1" class="check-label">Define specific availability hours when someone rents the item less than a day</label>
+
+		  				</div><!-- check -->
+
+
+
+		  				<div class="period-hidden clearfix">
+
+		  					<span class="period-time" style="display:none;">
+
+		  						<span class="select-label">Start time</span>
+
+			  					<span class="select">
+
+			  						<select class="custom-select">
+
+				  						<option>14:45</option>
+
+				  						<option>15:45</option>
+
+				  						<option>16:45</option>
+
+				  					</select>
+
+			  					</span>
+
+		  					</span>
+
+
+
+		  					<span class="period-time" style="display:none;">
+
+		  						<span class="select-label">End time</span>
+
+			  					<span class="select">
+
+			  						<select class="custom-select">
+
+				  						<option>20:00</option>
+
+				  						<option>21:00</option>
+
+				  						<option>22:00</option>
+
+				  					</select>
+
+			  					</span>
+
+		  					</span>
+
+		  				</div><!-- period-hidden -->
+
+		  			</div><!-- period-bot -->
+
+		  		</div><!-- period-content -->
+
+		  	</div><!-- period-item -->
+
+
+
+		  	<div class="period-item sometimes-item">
+
+		  		<div class="clearfix period-top">
+
+		  			<i class="sometimes-icon"></i>
+
+		  			<h3>Sometimes <small>For renting your item choose specific days.</small></h3>
+
+		  		</div><!-- clearfix period-top -->
+
+
+
+		  		<div class="period-content">
+
+
+
+		  			<div class="weekdays clearfix">
+
+		  				<p>Avilible for rental</p>
+
+		  				<span class="check day-wrapper">
+
+		  					<input id="sunday" type="checkbox" class="styled" name="sunday" checked />
+
+        					<label class="check-label" for="sunday">Sun</label>
+
+		  				</span>
+
+
+
+		  				<span class="check day-wrapper">
+
+		  					<input id="monday" type="checkbox" class="styled" name="monday" checked />
+
+        					<label class="check-label" for="monday">Mon</label>
+
+		  				</span>
+
+
+
+		  				<span class="check day-wrapper">
+
+		  					<input id="tuesday" type="checkbox" class="styled" name="tuesday" checked />
+
+        					<label class="check-label" for="tuesday">Tue</label>
+
+		  				</span>
+
+
+
+		  				<span class="check day-wrapper">
+
+		  					<input id="wednesday" type="checkbox" class="styled" name="wednesday" checked />
+
+        					<label class="check-label" for="wednesday">Wed</label>
+
+		  				</span>
+
+
+
+		  				<span class="check day-wrapper">
+
+		  					<input id="thursday" type="checkbox" class="styled" name="thursday" checked />
+
+        					<label class="check-label" for="thursday">Thu</label>
+
+		  				</span>
+
+
+
+		  				<span class="check day-wrapper">
+
+		  					<input id="friday" type="checkbox" class="styled" name="friday" checked />
+
+        					<label class="check-label" for="friday">Fri</label>
+
+		  				</span>
+
+
+
+		  				<span class="check day-wrapper">
+
+		  					<input id="saturday" type="checkbox" class="styled" name="saturday" checked />
+
+        					<label class="check-label" for="saturday">Sat</label>
+
+		  				</span>
+
+		  			</div><!-- weekdays -->
+
+
+
+		  			<div class="period-cont">
+
+		  				<p class="per-cont-p">
+
+		  					<span class="per-cont-span">Minimum renting period </span>
+
+		  					<span class="select">
+
+		  						<select class="custom-select">
+
+			  						<option>1 Hour</option>
+
+			  						<option>2 Hour</option>
+
+			  						<option>3 Hour</option>
+
+			  					</select>
+
+		  					</span>
+
+		  				</p>
+
+
+
+		  				<p class="per-cont-p">
+
+		  					<span class="per-cont-span">Ask for my confirmation to rent</span>
+
+		  					<span class="sel390">
+
+		  						<select class="custom-select">
+
+		  						<option>No - enable automatically when someone pays</option>
+
+		  						<option>No - enable automatically when someone pays</option>
+
+		  						<option>No - enable automatically when someone pays</option>
+
+		  					</select>
+
+		  					</span>	
+
+		  				</p>
+
+
+
+		  			</div><!-- period-cont -->
+
+
+
+		  			<div class="period-bot">
+
+		  				<div class="check">
+
+		  					<input id="def-check2" type="checkbox" class="styled" />
+
+        					<label for="def-check2" class="check-label">Define specific availability hours when someone rents the item less than a day</label>
+
+		  				</div><!-- check -->
+
+
+
+		  				<div class="period-hidden clearfix">
+
+		  					<span class="period-time" style="display:none;">
+
+		  						<span class="select-label">Start time</span>
+
+			  					<span class="select">
+
+			  						<select class="custom-select">
+
+				  						<option>14:45</option>
+
+				  						<option>15:45</option>
+
+				  						<option>16:45</option>
+
+				  					</select>
+
+			  					</span>
+
+		  					</span>
+
+
+
+		  					<span class="period-time" style="display:none;">
+
+		  						<span class="select-label">End time</span>
+
+			  					<span class="select">
+
+			  						<select class="custom-select">
+
+				  						<option>20:00</option>
+
+				  						<option>21:00</option>
+
+				  						<option>22:00</option>
+
+				  					</select>
+
+			  					</span>
+
+		  					</span>
+
+		  				</div><!-- period-hidden -->
+
+		  			</div><!-- period-bot -->
+
+		  		</div><!-- period-content -->
+
+		  	</div><!-- period-item -->
+
+
+
+		  	<div class="period-item sometimes-item">
+
+		  		<div class="clearfix period-top">
+
+		  			<i class="onetime-icon"></i>
+
+		  			<h3>One Period Only <small>My item availabale only on one time</small></h3>
+
+		  		</div><!-- clearfix period-top -->
+
+
+
+		  		<div class="period-content">
+
+		  			<div class="period-cont clearfix">
+
+		  			<h4>Select thouse dates and hours when your item is available</h4>
+
+
+
+		  			<div class="per-date">
+
+		  				<span class="period-time">
+
+		  						<span class="select-label">Start Date</span>
+
+			  					<span class="select">
+
+			  						<input type="text" id="start-date" class="form-control date-input">
+
+			  					</span>
+
+		  					</span>
+
+
+
+		  					<span class="period-time">
+
+		  						<span class="select-label">End Date</span>
+
+			  					<span class="select">
+
+			  						<input type="text" id="end-date" class="form-control date-input">
+
+			  					</span>
+
+		  					</span>
+
+		  			</div><!-- per-date -->
+
+
+
+		  			<div class="per-date">
+
+		  				<span class="period-time">
+
+		  						<span class="select-label">Start time</span>
+
+			  					<span class="select">
+
+			  						<select class="custom-select">
+
+				  						<option>14:45</option>
+
+				  						<option>15:45</option>
+
+				  						<option>16:45</option>
+
+				  					</select>
+
+			  					</span>
+
+		  					</span>
+
+
+
+		  					<span class="period-time">
+
+		  						<span class="select-label">End time</span>
+
+			  					<span class="select">
+
+			  						<select class="custom-select">
+
+				  						<option>20:00</option>
+
+				  						<option>21:00</option>
+
+				  						<option>22:00</option>
+
+				  					</select>
+
+			  					</span>
+
+		  					</span>
+
+		  			</div><!-- per-date -->
+
+		  		</div><!-- period-cont -->
+
+
+
+		  			<div class="some-bot">
+
+		  				<p class="per-cont-p">
+
+		  					<span class="per-cont-span">Minimum renting period </span>
+
+		  					<span class="select">
+
+		  						<select class="custom-select">
+
+			  						<option>1 Hour</option>
+
+			  						<option>2 Hour</option>
+
+			  						<option>3 Hour</option>
+
+			  					</select>
+
+		  					</span>
+
+		  				</p>
+
+
+
+		  				<p class="per-cont-p">
+
+		  					<span class="per-cont-span">Ask for my confirmation to rent</span>
+
+		  					<span class="sel390">
+
+		  						<select class="custom-select">
+
+		  						<option>No - enable automatically when someone pays</option>
+
+		  						<option>No - enable automatically when someone pays</option>
+
+		  						<option>No - enable automatically when someone pays</option>
+
+		  					</select>
+
+		  					</span>	
+
+		  				</p>
+
+
+
+		  			</div><!-- period-cont -->
+
+
+
+		  		</div><!-- period-content -->
+
+		  	</div><!-- period-item -->
+
+		 </div><!-- tab-pane -->
+
+
+
+		  <div class="tab-pane" id="pricing">
+
+		  
+
+		  	<div class="tab-cont-wrapper">
+
+		  			<h2>Pricing <small>Choose how much you want to charge for your item!</small></h2>
+
+		  		<div class="pricing-per-date">
+
+		  				<span class="period-time">
+
+		  						<span class="select-label">Per Day <small>(24 Hours)</small></span>
+
+			  					<span class="form-control select">
+
+			  						<input type="text" class="input-value" value="250"><i class="currency">ARS</i>
+
+			  					</span>
+
+		  					</span>
+
+
+
+		  					<span class="period-time">
+
+		  						<span class="select-label">Per Hour</span>
+
+			  					<span class="form-control select">
+
+			  						<input type="text" class="input-value" value="250"><i class="currency">ARS</i>
+
+			  					</span>
+
+		  					</span>
+
+		  			</div><!-- per-date -->
+
+
+
+		  			<div class="pricing-select">
+
+		  				<span class="per-cont-span pricing-cont-span">Min period </span>
+
+		  					<span class="select">
+
+		  						<select class="custom-select">
+
+			  						<option>1 Hour</option>
+
+			  						<option>2 Hour</option>
+
+			  						<option>3 Hour</option>
+
+			  					</select>
+
+		  					</span>
+
+		  			</div><!-- pricing-select -->	
+
+
+
+		  			<div class="pricing-select">
+
+		  				<span class="per-cont-span pricing-cont-span">Currency </span>
+
+		  					<span class="select">
+
+		  						<select class="custom-select">
+
+			  						<option>ARS</option>
+
+			  						<option>EUR</option>
+
+			  						<option>RUB</option>
+
+			  					</select>
+
+		  					</span>
+
+		  			</div><!-- pricing-select -->	
+
+
+
+		  	</div><!-- pricing-content -->
+
+		  </div><!-- tab-pane -->
+
+
+
+		  <div class="tab-pane" id="photos">
+
+		  		<div class="tab-cont-wrapper">
+
+		  			<h2>Photos <small>Drop or uplode your item photos</small></h2>
+
+		  			<div class="photo-drop">
+
+		  				<div class="photo-drop-inner">
+
+		  					<p class="drop-title">Drop here at least one photo! <small>or add as many photos you want.</small></p>
+
+		  					<span class="btn btn-primary btn-photo">Add Photos</span>
+
+		  				</div><!-- ph-dr-inner -->
+
+		  			</div><!-- photo-drop -->
+
+
+
+		  			<div class="photos-wrapper" hidden>
+
+		  				<div class="row photo-info-bar">
+
+		  					<div class="col-md-6">
+
+		  						<p>You have added <span>6</span> photos</p>
+
+		  					</div><!-- col-md-6 -->
+
+		  					<div class="col-md-6 tar">
+
+		  						<button class="btn btn-primary add-more-photo" data-toggle="modal" data-target="#photo-modal">Add More Photos</button>
+
+		  					</div><!-- col-md-6 -->
+
+		  				</div><!-- photo-info-bar -->
+
+		  				<div class="row photo-blocks clearfix">
+		  					<div class="photo-block">
+		  						<div class="photo-img-block">
+		  							<img src="uploads/images/bike.jpg" alt="" />
+		  							<span class="pib-links">
+		  								<i class="pib-edit"></i>
+		  								<i class="pib-delete"></i>
+		  							</span>
+		  							<i class="red-flag"></i>
+		  						</div><!-- photo-img-block -->
+		  						<textarea class="form-control photo-text" placeholder="Write some description about this photo"></textarea>
+		  					</div><!-- photo-block -->
+
+
+		  					<div class="photo-block">
+		  						<div class="photo-img-block">
+		  							<img src="uploads/images/bike.jpg" alt="" />
+		  							<span class="pib-links">
+		  								<i class="pib-favour"></i>
+		  								<i class="pib-edit"></i>
+		  								<i class="pib-delete"></i>
+		  							</span>
+		  						</div><!-- photo-img-block -->
+		  						<textarea class="form-control photo-text" placeholder="Write some description about this photo"></textarea>
+		  					</div><!-- photo-block -->
+
+
+		  					<div class="photo-block">
+		  						<div class="photo-img-block">
+		  							<img src="uploads/images/bike.jpg" alt="" />
+		  							<span class="pib-links">
+		  								<i class="pib-favour"></i>
+		  								<i class="pib-edit"></i>
+		  								<i class="pib-delete"></i>
+		  							</span>
+		  						</div><!-- photo-img-block -->
+		  						<textarea class="form-control photo-text" placeholder="Write some description about this photo"></textarea>
+		  					</div><!-- photo-block -->
+
+
+		  					<div class="photo-block">
+		  						<div class="photo-img-block">
+		  							<img src="uploads/images/bike.jpg" alt="" />
+		  							<span class="pib-links">
+		  								<i class="pib-favour"></i>
+		  								<i class="pib-edit"></i>
+		  								<i class="pib-delete"></i>
+		  							</span>
+		  						</div><!-- photo-img-block -->
+		  						<textarea class="form-control photo-text" placeholder="Write some description about this photo"></textarea>
+		  					</div><!-- photo-block -->
+
+		  					<div class="photo-block">
+		  						<div class="photo-img-block">
+		  							<img src="uploads/images/bike.jpg" alt="" />
+		  							<span class="pib-links">
+		  								<i class="pib-favour"></i>
+		  								<i class="pib-edit"></i>
+		  								<i class="pib-delete"></i>
+		  							</span>
+		  						</div><!-- photo-img-block -->
+		  						<textarea class="form-control photo-text" placeholder="Write some description about this photo"></textarea>
+		  					</div><!-- photo-block -->
+
+		  					<div class="photo-block photo-loader-block">
+		  						<div class="plb-inner">
+		  							<div class="spinner">
+									  <div class="bounce1"></div>
+									  <div class="bounce2"></div>
+									  <div class="bounce3"></div>
+									  <span>loading...</span>
+									</div>
+		  						</div><!-- plb-inner -->
+		  					</div><!-- photo-block -->
+
+		  				</div><!-- row photo-blocks -->
+		  			</div><!-- photos-wrapper row -->
+		  		</div><!-- tab-cont-wrapper -->
+		  </div><!-- tab-pane -->
+
+
+		   <div class="tab-pane" id="rules">
+
+		   		<div class="tab-cont-wrapper">
+
+		   			<h2>My Rules and Policy <small>Here you'll define your rules when things go out of plan.</small></h2>
+
+
+
+		   			<div class="rules-wrapper">
+
+		   				<div class="rules-block">
+
+		   				<div class="rule">
+
+		   					1. If costumer late to return my item, he'll be extra charged <span class="form-control percent-input"><input type="text" value="25"><i>%</i></span> more for each hour late.
+
+		   				</div><!-- rule -->
+
+		   				<div class="rule-open-wrap">
+
+		   					<span class="link rule-open">Add rules</span>
+
+		   				</div><!-- rule-open-wrap -->
+
+		   				<div class="rule-cont">
+
+		   					<ul>
+
+		   						<li>
+
+		   							A. <span class="rule-input"><input type="text" class="form-control"></span> to <span class="rule-input"><input type="text" class="form-control"></span> hours late - <span class="form-control percent-input"><input type="text" value="25"><i>%</i></span> more for each basic period of late.
+
+		   						</li>
+
+
+
+		   						<li>
+
+		   							B. If late more than <span class="rule-input"><input type="text" class="form-control"></span> hours - <span class="form-control percent-input"><input type="text" value="25"><i>%</i></span> more for each basic period of late.
+
+		   						</li>
+
+		   					</ul>
+
+		   					<span class="link rule-close">Close</span>
+
+		   				</div><!-- rule-cont -->
+
+		   			</div><!-- rules-block -->
+
+
+
+		   			<div class="rules-block">
+
+		   				<div class="rule">
+
+		   					2. If customer returns my item Scratched / Torn etc, he'll be extra charged for <span class="form-control percent-input"><i>$</i><input type="text" value="25"></span>
+
+		   				</div><!-- rule -->
+
+		   				<div class="rule-open-wrap">
+
+		   					<span class="link rule-open">Add rules</span>
+
+		   				</div><!-- rule-open-wrap -->
+
+		   				<div class="rule-cont">
+
+		   					<ul>
+
+		   						<li>
+
+		   							A.  Broken - but working - extra <span class="form-control percent-input"><i>$</i><input type="text" value="25"></span>
+
+		   						</li>
+
+
+
+		   						<li>
+
+		   							B.  Broken and not working - extra <span class="form-control percent-input"><i>$</i><input type="text" value="25"></span>
+
+		   						</li>
+
+		   					</ul>
+
+		   					<p class="red">* if nothing was marked - no extra charged will apply.</p>
+
+		   					<span class="link rule-close">Close</span>
+
+		   				</div><!-- rule-cont -->
+
+		   			</div><!-- rules-block -->
+
+
+
+		   			<div class="rules-block">
+
+		   				<div class="rule">
+
+		   					<p>3. If your customer doesn't return the item after   <span class="form-control percent-input hours-input"><input type="text" value="48"><i>hours</i></span> and he didn't ask for time extension (i.e., it seems the item will not be returned to you). </p>
+
+		   					<p>The renter will be charged for the item price, which is <span class="form-control percent-input"><i>$</i><input type="text" value="25"></span></p>
+
+		   				</div><!-- rule -->
+
+		   				
+
+		   			</div><!-- rules-block -->
+
+		   			</div><!-- rules-wrapper -->
+
+
+
+		   			<div class="cancel">
+
+		   				<h3 class="cancel-title">Cancellation policy <small>Choose one track that more appropriate to you.</small></h3>
+
+		   				<div class="cancel-wrapper">
+
+		   					<div class="cancel-block">
+
+		   					<div class="radio-wrap">
+
+		   						<input type="radio" name="group-radio" checked id="kind-radio" class="styled">
+
+		   						<label for="kind-radio">
+
+		   							<b>Kind</b>
+
+		   							One or two sentence explanation of this policy track lorem ipsum.
+
+		   						</label>
+
+		   					</div><!-- radio -->
+
+		   						<span data-toggle="modal" data-target="#kind-modal" class="link">Read more</span>
+
+		   				</div><!-- cancel-block -->
+
+
+
+		   				<div class="cancel-block">
+
+		   					<div class="radio-wrap">
+
+		   						<input type="radio" name="group-radio" id="soft-radio" class="styled">
+
+		   						<label for="soft-radio">
+
+		   							<b>Soft</b>
+
+		   							Full refund 6 hours prior to delivery, except fees.
+
+		   						</label>
+
+		   					</div><!-- radio -->
+
+		   					<span data-toggle="modal" data-target="#soft-modal" class="link">Read more</span>
+
+		   				</div><!-- cancel-block -->
+
+
+
+		   				<div class="cancel-block">
+
+		   					<div class="radio-wrap">
+
+		   						<input type="radio" name="group-radio" id="moder-radio" class="styled">
+
+		   						<label for="moder-radio">
+
+		   							<b>Moderate</b>
+
+		   							Full refund 24 hours prior to delivery, except fees.
+
+		   						</label>
+
+		   					</div><!-- radio -->
+
+		   					<span data-toggle="modal" data-target="#moder-modal" class="link">Read more</span>
+
+		   				</div><!-- cancel-block -->
+
+
+
+		   				<div class="cancel-block">
+
+		   					<div class="radio-wrap">
+
+		   						<input type="radio" name="group-radio" id="strict-radio" class="styled">
+
+		   						<label for="strict-radio">
+
+		   							<b>Strict</b>
+
+		   							50% refund up until 24 hours prior to delivery, except fees.
+
+		   						</label>
+
+		   					</div><!-- radio -->
+
+		   					<span data-toggle="modal" data-target="#strict-modal" class="link">Read more</span>
+
+		   				</div><!-- cancel-block -->
+
+		   				</div><!-- cancel-wrapper -->
+
+		   			</div><!-- cancel -->
+
+		   		</div><!-- tab-cont-wrapper -->
+
+
+
+		  </div><!-- tab-pane -->
+
+
+
+		   <div class="tab-pane" id="tab-location">
+
+		   		<div class="tab-cont-wrapper">
+
+		   			<div class="tab-header">
+
+		   				<h2>Location</h2>
+
+		  				<p class="tab-descr">Your exact address is private and only shared with guests after a reservation is confirmed.</p>
+
+		   			</div><!-- tab-header -->
+
+
+
+		   			<div class="map-container">
+
+		   				<div class="form-map-search clearfix">
+
+		   					<label class="loc-text">Your location</label>
+
+		   					<span class="map-search"><input type="text" class="form-control"></span>
+
+		   					<button class="btn btn-primary btn-mid">Find</button>
+
+		   				</div>
+
+		   				<div class="map-wrapper">
+		   					<div class="map-start"></div><!-- map-start -->
+		   					<div class="map-container">
+		   						<div class="map-block">
+		   							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3381.0308214582283!2d34.7866743!3d32.068415099999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b77c19e8c97%3A0x651ed462c94806d6!2zRGVyZWNoIE1lbmFjaGVtIEJlZ2luIDkwLCBUZWwgQXZpdi1ZYWZvLCDQmNC30YDQsNC40LvRjA!5e0!3m2!1sru!2s!4v1416483295427" width="100%" height="300" frameborder="0" style="border:0"></iframe>
+		   						</div><!-- map -->
+		   						<div class="map-text">
+				   					<p>This is your item location <b>“Menahem begin, 90 tel aviv”</b>. <br>Your location will only be shared with guests after a reservation is confirmed.
+				   					</p>
+				   				</div><!-- map-text -->
+		   					</div><!-- map-container -->
+		   				</div><!-- map-wrapper -->
+
+		   			</div><!-- map-container -->
+
+		   		</div><!-- tab-cont-wrapper -->
+
+		  </div><!-- tab-pane -->
+
+		</div><!-- tab-content -->
+
+</form><!-- end-form global listing -->
+
+		</div><!-- row -->
+
+	</div><!-- container-fluid listing-content -->
+
+	<div class="empty clearfix"></div><!-- empty -->
+
+</div><!-- all -->
+
+
+
+<footer class="container-fluid footer clearfix">
+
+	<div class="fcont">
+
+		<div class="fdownload">
+
+		<p>Download the rentitb app and start tenting your items</p>
+
+		<div class="dlinks">
+
+			<a href="#"><img src="uploads/images/appstore.png" alt="" /></a>
+
+			<a href="#"><img src="uploads/images/gplay.png" alt="" /></a>
+
+		</div><!-- dlinks -->
+
+	</div><!-- fdownload -->
+
+
+
+	<div class="row fbot clearfix">
+
+		<nav class="fnav">
+
+			<ul class="fmenu">
+
+				<li><a href="#">Who we are</a></li>
+
+				<li><a href="#">How it works</a></li>
+
+				<li><a href="#">Press</a></li>
+
+				<li><a href="#">Privacy</a></li>
+
+				<li><a href="#">Terms</a></li>
+
+				<li><a href="#">Trust & Safety</a></li>
+
+			</ul>                                       
+
+		</nav>
+
+			<div class="fcopy">
+
+				<span>&copy; 2014 rentitb</span>
+
+				<a href="#" class="tw"></a>
+
+				<a href="#" class="fb"></a>
+
+			</div><!-- col-md-3 -->
+
+		</div><!-- row -->
+
+	</div><!-- fcont -->
+
+</footer>
+
+<!-- Modal -->
+
+<div class="modal fade" id="sign-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+		<a href="#" class="btn sbtn btn-primary"><i class="sfb"></i>Sign up with Facebook</a>
+
+       	<a href="#" class="btn sbtn btn-danger"><i class="sg"></i>Sign up with Google +</a>
+
+      	<p class="bdt">or just</p>
+
+      	<div class="email-reg sign-form-block">
+
+      		<form role="form" id="signForm">
+
+      			 <div class="form-group">
+
+				    <input type="text" class="form-control" placeholder="Enter your name" name="cname" data-validation="required">
+
+				  </div>
+
+      			<div class="form-group">
+
+				    <input type="text" class="form-control" placeholder="Enter your last name" name="lastname" data-validation="required">
+
+				  </div>
+
+			  <div class="form-group">
+
+			    <input type="email" class="form-control" placeholder="Enter your email" name="email" data-validation="required">
+
+			  </div>
+
+			  <div class="form-group">
+
+			    <input type="password" class="form-control" placeholder="Creat your password" name="password" data-validation="required">
+
+			  </div>
+
+			   <div class="form-group">
+
+			    <input type="password" class="form-control" placeholder="Confirm your password" name="pass-confirm" data-validation="required">
+
+			  </div>
+
+			  <div class="checkbox">
+
+   				 <label><input type="checkbox"> Join to Rentitb’s news and updates</label>
+
+  			</div>
+
+  			 <button type="submit" class="btn sbtn btn-danger">Login</button>
+
+			</form>
+
+      	</div><!-- email-reg -->
+
+      	<a class="btn sbtn btn-default" id="sbtn-email"><i class="semail"></i>Sign up with Email</a>
+
+      	<div class="conditions tac">
+
+      		By signing up, I agree to Rentitb's <br> <a href="#">Terms of Service, Privacy Policy</a> and <a href="#">Renter Guarantee Terms.</a>
+
+      	</div><!-- conditions -->
+
+      </div><!-- modal-body -->
+
+      <div class="modal-footer tac">
+
+        <p class="alr">Already have a Rentitb account?</p>
+
+        <a href="#" class="log-link">Login</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal login -->
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title" id="myModalLabel">Login</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+		<a href="#" class="btn sbtn btn-primary"><i class="sfb"></i>Sign up with Facebook</a>
+
+       	<a href="#" class="btn sbtn btn-danger"><i class="sg"></i>Sign up with Google +</a>
+
+      	<p class="bdt">or just</p>
+
+      	<div class="email-reg">
+
+      		<form role="form">
+
+			  <div class="form-group">
+
+			    <input type="email" class="form-control" placeholder="Enter your email">
+
+			  </div>
+
+			  <div class="form-group">
+
+			    <input type="password" class="form-control" placeholder="Enter your password">
+
+			  </div>
+
+			  <div class="checkbox">
+
+   				 <label><input type="checkbox"> Remember me</label>
+
+  			</div>
+
+  			 <button type="submit" class="btn sbtn btn-danger">Login</button>
+
+			</form>
+
+			<p class="tac"><a class="forgot" data-toggle="modal" data-target="#reset-modal">Forgot your password?</a></p>
+
+      	</div><!-- email-reg -->
+
+      </div><!-- modal-body -->
+
+      <div class="modal-footer tac">
+
+        <p class="alr">Not on Rentitb?</p>
+
+        <a href="#" class="log-link">Get start here</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+
+
+<!-- Modal cancel -->
+
+<div class="modal fade cancel-modal" id="kind-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="modal-header">
+
+        <h2 class="fancy-title">Cancellation Policy - <b>Kind</b></h2>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="fancy-text">
+
+		   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mi blandit, hendrerit ligula sed, aliquet ante.</p>
+
+
+
+			<p>Donec ut ex arcu. Donec faucibus odio quis turpis porta, cursus mollis tellus pulvinar. Aliquam rhoncus sed dolor ut blandit.
+
+			Nulla facilisi. Nulla sapien mauris, ultricies quis molestie id, euismod ut diam. Vestibulum mattis mauris leo, semper tristique arcu imperdiet eget.</p>
+
+
+
+			<p>Aliquam erat volutpat. Integer venenatis luctus justo, et vestibulum enim. Nulla commodo aliquet diam. Vivamus porta pharetra ultrices.</p>
+
+
+
+			<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+
+
+			<p>Mauris interdum nisl id condimentum efficitur. Aenean eu scelerisque elit. Aliquam cursus luctus elit sed suscipit. Sed in efficitur lorem, quis aliquet eros. Nam mollis purus id quam sodales ultrices. In ut libero quis nisi laoreet condimentum id et mauris. Praesent id arcu vitae nisl sagittis pulvinar.</p>
+
+		   </div><!-- fancy-text -->
+
+      </div><!-- modal-body -->
+
+     
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal cancel -->
+
+<div class="modal fade cancel-modal" id="soft-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="modal-header">
+
+        <h2 class="fancy-title">Cancellation Policy - <b>Soft</b></h2>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="fancy-text">
+
+		   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mi blandit, hendrerit ligula sed, aliquet ante.</p>
+
+
+
+			<p>Donec ut ex arcu. Donec faucibus odio quis turpis porta, cursus mollis tellus pulvinar. Aliquam rhoncus sed dolor ut blandit.
+
+			Nulla facilisi. Nulla sapien mauris, ultricies quis molestie id, euismod ut diam. Vestibulum mattis mauris leo, semper tristique arcu imperdiet eget.</p>
+
+
+
+			<p>Aliquam erat volutpat. Integer venenatis luctus justo, et vestibulum enim. Nulla commodo aliquet diam. Vivamus porta pharetra ultrices.</p>
+
+
+
+			<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+
+
+			<p>Mauris interdum nisl id condimentum efficitur. Aenean eu scelerisque elit. Aliquam cursus luctus elit sed suscipit. Sed in efficitur lorem, quis aliquet eros. Nam mollis purus id quam sodales ultrices. In ut libero quis nisi laoreet condimentum id et mauris. Praesent id arcu vitae nisl sagittis pulvinar.</p>
+
+		   </div><!-- fancy-text -->
+
+      </div><!-- modal-body -->
+
+     
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal cancel -->
+
+<div class="modal fade cancel-modal" id="moder-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="modal-header">
+
+        <h2 class="fancy-title">Cancellation Policy - <b>Moderate</b></h2>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="fancy-text">
+
+		   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mi blandit, hendrerit ligula sed, aliquet ante.</p>
+
+
+
+			<p>Donec ut ex arcu. Donec faucibus odio quis turpis porta, cursus mollis tellus pulvinar. Aliquam rhoncus sed dolor ut blandit.
+
+			Nulla facilisi. Nulla sapien mauris, ultricies quis molestie id, euismod ut diam. Vestibulum mattis mauris leo, semper tristique arcu imperdiet eget.</p>
+
+
+
+			<p>Aliquam erat volutpat. Integer venenatis luctus justo, et vestibulum enim. Nulla commodo aliquet diam. Vivamus porta pharetra ultrices.</p>
+
+
+
+			<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+
+
+			<p>Mauris interdum nisl id condimentum efficitur. Aenean eu scelerisque elit. Aliquam cursus luctus elit sed suscipit. Sed in efficitur lorem, quis aliquet eros. Nam mollis purus id quam sodales ultrices. In ut libero quis nisi laoreet condimentum id et mauris. Praesent id arcu vitae nisl sagittis pulvinar.</p>
+
+		   </div><!-- fancy-text -->
+
+      </div><!-- modal-body -->
+
+     
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal cancel -->
+
+<div class="modal fade cancel-modal" id="strict-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="modal-header">
+
+        <h2 class="fancy-title">Cancellation Policy - <b>Strict</b></h2>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="fancy-text">
+
+		   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mi blandit, hendrerit ligula sed, aliquet ante.</p>
+
+
+
+			<p>Donec ut ex arcu. Donec faucibus odio quis turpis porta, cursus mollis tellus pulvinar. Aliquam rhoncus sed dolor ut blandit.
+
+			Nulla facilisi. Nulla sapien mauris, ultricies quis molestie id, euismod ut diam. Vestibulum mattis mauris leo, semper tristique arcu imperdiet eget.</p>
+
+
+
+			<p>Aliquam erat volutpat. Integer venenatis luctus justo, et vestibulum enim. Nulla commodo aliquet diam. Vivamus porta pharetra ultrices.</p>
+
+
+
+			<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+
+
+			<p>Mauris interdum nisl id condimentum efficitur. Aenean eu scelerisque elit. Aliquam cursus luctus elit sed suscipit. Sed in efficitur lorem, quis aliquet eros. Nam mollis purus id quam sodales ultrices. In ut libero quis nisi laoreet condimentum id et mauris. Praesent id arcu vitae nisl sagittis pulvinar.</p>
+
+		   </div><!-- fancy-text -->
+
+      </div><!-- modal-body -->
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal photo -->
+
+<div class="modal fade photo-modal" id="photo-modal">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">    
+
+      <div class="modal-body">
+
+        <p>You can upload up to 10 photos.</p>
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary btn-mid">Got It!</button>
+
+      </div>
+
+    </div><!-- /.modal-content -->
+
+  </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.form-validator.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.selectbox.js"></script>
+
+	<script src="js/custom-form-elements.js"></script>
+
+	<script src="js/readmore.min.js"></script>
+
+	<script src="js/ion.rangeSlider.min.js"></script>
+
+	<script src="js/jquery.bxslider.min.js"></script>
+
+	<script src="js/waypoints.min.js"></script>
+
+	<script src="js/waypoints-sticky.min.js"></script>	
+
+	<script src="fancybox2/jquery.fancybox.js"></script>
+
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>

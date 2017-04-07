@@ -1,0 +1,659 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>rentlib</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<input type="text" id="hidden-text" value="" style="position: fixed;left: -1000px;" />
+<!-- 	<div class="all">
+ -->		<header class="container-fluid map">
+			<div class="row header-top top-bar">
+				<a class="logo" href="#">logo</a>
+				<div class="col-md-9 col-md-offset-3 hlinks">
+				<button type="button" class="btn btn-danger btn-list">List Your Item</button>
+					<div class="help">
+					    <div class="btn-group">
+						    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+						        Help
+						        <span class="help-icon"></span>
+						      </button>
+						    <ul class="dropdown-menu">
+						      	<li><a href="#">How do i rent my items on Rentitb?</a></li>
+								<li><a href="#">How can i promote my listing?</a></li>
+								<li><a href="#">How is the wevb is protected?</a></li>
+								<li><a href="#">View all FAQs</a></li>
+								<i class="help-arrow"></i>
+						    </ul>
+					  </div>
+					</div>
+					<div class="avatar-container">
+							<img src="img/avatar.jpg" height="53" width="53" alt="">
+							<div class="btn-group">
+								<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="account">
+							        Ilya Boruhov
+							        <span class="help-icon"></span>
+						        </button>
+						        <ul class="dropdown-menu" area-labelledby="account">
+							      	<li><a href="#">Dashboard</a></li>
+									<li><a href="#">My Listing</a></li>
+									<li><a href="#">Orders to My Listing</a></li>
+									<li><a href="#">My Reservation</a></li>
+									<li><a href="#">Items I've Rent</a></li>
+									<li><a href="#">My Wish Lists</a></li>
+									<hr>
+									<li><a href="#">Language</a></li>
+									<hr>
+									<li><a href="#">Edit Profile</a></li>
+									<li><a href="#">Account</a></li>
+									<li><a href="#">Log Out</a></li>
+									<i class="help-arrow"></i>
+						    	</ul>
+
+					        </div>
+					</div>
+					<div class="pull-right notification">
+						<span class="notif-btn" data-toggle="dropdown" id="notif-btn">
+							<i class="notif-icon"></i>
+							<span class="notif-num">5</span>
+						</span>
+
+						 <ul class="dropdown-menu notif-menu" area-labelledby="notif-btn">
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="ava-block ava-small">
+						  					<img src="uploads/images/i-ava2.jpg" alt="" />
+						  				</span><!-- ava-block -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-star"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+								<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="ava-block ava-small">
+						  					<img src="uploads/images/i-ava2.jpg" alt="" />
+						  				</span><!-- ava-block -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-let"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="nt-img">
+						  					<img src="uploads/images/notif.jpg" alt="" />
+						  				</span><!-- nt-img -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+						  					<span class="nt-text">Did you deliverd your item to Josh?</span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  					<button class="btn btn-primary nt-btn">Yes, I Deliverd</button>
+						  					<button class="btn btn-default nt-btn">No, I Don’t</button>
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-star"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="nt-img">
+						  					<img src="uploads/images/notif.jpg" alt="" />
+						  				</span><!-- nt-img -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+						  					<span class="nt-text">Did you deliverd your item to Josh?</span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  					<button class="btn btn-primary nt-btn">Yes, I Get</button>
+						  					<button class="btn btn-default nt-btn">No, I Don’t</button>
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+
+						      	<li>
+						      		<a href="#" class="notif-mess notif-mess-success">
+						      			<span class="nt-img">
+						  					<img src="uploads/images/notif.jpg" alt="" />
+						  				</span><!-- nt-img -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+						  					<span class="nt-text">The deal was seccessfully approved by two sides!</span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->	
+						  				<i class="hands-s nt-hands"></i>
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li class="nt-bot">
+						      		<a href="#" class="nt-clear">Clear all</a>
+						      	</li>
+						      	<i class="help-arrow"></i>
+						    </ul>
+
+	<!--  this is the category block for notification  -->
+	<!--  tif you want see it - delete style="right: 9999px !important"  -->	
+
+						     <ul class="dropdown-menu notif-menu" area-labelledby="notif-btn" style="right: 9999px !important">
+						      	<li>
+						      		<a href="#" class="notif-cat notif-cat1">
+						      			<span class="nt-cat-label"><i class="nt-cat-let"></i></span><!--  nt-label -->
+						  				<span class="nt-cat-cont">
+						  					<span class="nt-cat-title">3 New Messages</span><!--  nt-title -->	
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  				</span><!--  nt-cont -->					  					
+						      		</a>
+						      	</li>
+
+						      	<li>
+						      		<a href="#" class="notif-cat notif-cat2">
+						      			<span class="nt-cat-label"><i class="nt-cat-com"></i></span><!--  nt-label -->
+						  				<span class="nt-cat-cont">
+						  					<span class="nt-cat-title">5 New Notifications</span><!--  nt-title -->	
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  				</span><!--  nt-cont -->					  					
+						      		</a>
+						      	</li>
+
+						      	<li>
+						      		<a href="#" class="notif-cat notif-cat3">
+						      			<span class="nt-cat-label"><i class="nt-cat-star"></i></span><!--  nt-label -->
+						  				<span class="nt-cat-cont">
+						  					<span class="nt-cat-title">3 New Messages</span><!--  nt-title -->	
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  				</span><!--  nt-cont -->					  					
+						      		</a>
+						      	</li>
+						      	<li class="nt-bot">
+						      		<a href="#" class="nt-clear">Clear all</a>
+						      	</li>
+						      	<i class="help-arrow"></i>
+						    </ul>
+						    
+					</div><!-- notification -->
+					<div id="slide-search" class="slide-search">
+					    <form>
+					        <input class="slide-search__input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+					        <input class="slide-search__submit" type="submit" value="">
+					        <span class="slide-search-icon"></span>
+					    </form>
+					</div>
+					<div class="mobile-search">
+						<input type="text" class="form-control" placeholder="Enter your search here">
+					</div>
+				</div><!-- hlinks -->
+			</div>
+		<div class="hero-map hidden-sm hidden-xs">
+            <section id="cd-google-map">
+                <div id="google-container"></div>
+            </section>
+        </div>
+		</header>
+
+		<!-- begin filters-container  -->
+		<button class="show-filters btn-danger">&#x2162;</button>
+		<div class="filters-container hidden-sm hidden-xs">
+			<div class="change-location">
+				Your location:
+				<a id="location_dd" class="location dropdown-toggle" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">Herzel 35, Givatayim</a>
+				<div class="dropdown-menu" area-labelledby="location_dd">
+					<label for="new_location">Change your locaion</label>
+					<input type="text" class="form-control" id="new_location" value="Herzel 35, tel aviv">
+					<i class="help-arrow"></i>
+				</div>
+			</div><!-- change-location -->
+			<div class="row">
+				<div class="date-filters">
+					<label class="filter-label"for="datepicker">Period</label>
+					<div class="filter-wrapper">
+						<input type="text" id="datepicker1" class="filter_datepicker" placeholder="Start Date">
+					<!-- <input type="text" class="filter_timepicker" placeholder="Start Time"> -->
+					<div class="filter_timepicker">
+					<select name="" id="timepicker1" class="custom-select">
+						<option value="1">Start time</option>
+						<option value="00:00">00:00</option>
+						<option value="00:30">00:30</option>
+						<option value="01:00">01:00</option>
+						<option value="01:30">01:30</option>
+						<option value="02:00">02:00</option>
+						<option value="02:30">02:30</option>
+						<option value="03:00">03:00</option>
+						<option value="03:30">03:30</option>
+						<option value="04:00">04:00</option>
+						<option value="04:30">04:30</option>
+						<option value="05:00">05:00</option>
+						<option value="05:30">05:30</option>
+						<option value="06:00">06:00</option>
+						<option value="06:30">06:30</option>
+						<option value="07:00">07:00</option>
+						<option value="07:30">07:30</option>
+						<option value="08:00">08:00</option>
+						<option value="08:30">08:30</option>
+						<option value="09:00">09:00</option>
+						<option value="09:30">09:30</option>
+						<option value="10:00">10:00</option>
+						<option value="10:30">10:30</option>
+						<option value="11:00">11:00</option>
+						<option value="11:30">11:30</option>
+						<option value="12:00">12:00</option>
+						<option value="12:30">12:30</option>
+						<option value="13:00">13:00</option>
+						<option value="13:30">13:30</option>
+						<option value="14:00">14:00</option>
+						<option value="14:30">14:30</option>
+						<option value="15:00">15:00</option>
+						<option value="15:30">15:30</option>
+						<option value="16:00">16:00</option>
+						<option value="16:30">16:30</option>
+						<option value="17:00">17:00</option>
+						<option value="17:30">17:30</option>
+						<option value="18:00">18:00</option>
+						<option value="18:30">18:30</option>
+						<option value="19:00">19:00</option>
+						<option value="19:30">19:30</option>
+						<option value="20:00">20:00</option>
+						<option value="20:30">20:30</option>
+						<option value="21:00">21:00</option>
+						<option value="21:30">21:30</option>
+						<option value="22:00">22:00</option>
+						<option value="22:30">22:30</option>
+						<option value="23:00">23:00</option>
+						<option value="23:30">23:30</option>
+					</select>
+					</div>
+					</div><!-- filter-wrapper -->
+					<span class="to">to</span>
+					<div class="filter-wrapper">
+						<input type="text" id="datepicker2" class="filter_datepicker" placeholder="End Date">
+					<!-- <input type="text" class="filter_timepicker" placeholder="End Time"> -->
+					<div class="filter_timepicker">
+					<select name="" id="timepicker2" class="custom-select">
+						<option value="1">End time</option>
+						<option value="00:00">00:00</option>
+						<option value="00:30">00:30</option>
+						<option value="01:00">01:00</option>
+						<option value="01:30">01:30</option>
+						<option value="02:00">02:00</option>
+						<option value="02:30">02:30</option>
+						<option value="03:00">03:00</option>
+						<option value="03:30">03:30</option>
+						<option value="04:00">04:00</option>
+						<option value="04:30">04:30</option>
+						<option value="05:00">05:00</option>
+						<option value="05:30">05:30</option>
+						<option value="06:00">06:00</option>
+						<option value="06:30">06:30</option>
+						<option value="07:00">07:00</option>
+						<option value="07:30">07:30</option>
+						<option value="08:00">08:00</option>
+						<option value="08:30">08:30</option>
+						<option value="09:00">09:00</option>
+						<option value="09:30">09:30</option>
+						<option value="10:00">10:00</option>
+						<option value="10:30">10:30</option>
+						<option value="11:00">11:00</option>
+						<option value="11:30">11:30</option>
+						<option value="12:00">12:00</option>
+						<option value="12:30">12:30</option>
+						<option value="13:00">13:00</option>
+						<option value="13:30">13:30</option>
+						<option value="14:00">14:00</option>
+						<option value="14:30">14:30</option>
+						<option value="15:00">15:00</option>
+						<option value="15:30">15:30</option>
+						<option value="16:00">16:00</option>
+						<option value="16:30">16:30</option>
+						<option value="17:00">17:00</option>
+						<option value="17:30">17:30</option>
+						<option value="18:00">18:00</option>
+						<option value="18:30">18:30</option>
+						<option value="19:00">19:00</option>
+						<option value="19:30">19:30</option>
+						<option value="20:00">20:00</option>
+						<option value="20:30">20:30</option>
+						<option value="21:00">21:00</option>
+						<option value="21:30">21:30</option>
+						<option value="22:00">22:00</option>
+						<option value="22:30">22:30</option>
+						<option value="23:00">23:00</option>
+						<option value="23:30">23:30</option>
+					</select>
+					</div>
+					</div><!-- filter-wrapper -->
+				</div>
+				<div class="delivery-filters">
+					<div>
+					<div class="checkbox-container">
+						<input type="checkbox" id="deliver-pickup">
+						<label for="deliver-pickup" class="filter" data-filter="deliverandpickup"></label>
+						<span>Deliver and pickup items from me</span>
+						<!-- <span class="false-checkbox filter" data-filter=".deliverandpickup"></span><p>Deliver and pickup items from me</p> -->
+					</div>
+					<div class="checkbox-container">
+						<input type="checkbox" id="deliver">
+						<label for="deliver" class="filter" data-filter="deliveronly"></label>
+						<span>Only deliver item to me</span>
+						<!-- <span class="false-checkbox filter" data-filter=".deliveronly"></span><p>Only deliver item to me</p> -->
+					</div>
+					<div class="checkbox-container">
+						<input type="checkbox" id="pickup">
+						<label for="pickup" class="filter" data-filter="pickuponly"></label>
+						<span>Only pickup item from me</span>
+						<!-- <span class="false-checkbox filter" data-filter=".pickuponly"></span><p>Only pickup item to me</p> -->
+					</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="price-range col-md-6">
+					<div class="currency-select">
+						<a id="location_dd" class="country dropdown-toggle" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">Price range <span class="dd-icon"></span></a>
+						<div class="dropdown-menu" area-labelledby="location_dd">
+							<label for="new_country">Change price currency</label>
+							<select class="custom-select" name="new_country" id="new_country">
+								<option>USA</option>
+								<option>GB</option>
+							</select>
+							<i class="help-arrow"></i>
+						</div>
+				</div>
+				<div class="price-slider">
+					<input type="text" id="price-slider">
+				</div>
+				</div>
+				<div class="price-range col-md-6">
+				<div class="distance-select">
+						<a id="distance_dd" class="distance dropdown-toggle" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">Distance <span class="dd-icon"></span></a>
+						<div class="dropdown-menu" area-labelledby="distance_dd">
+							<label for="distance">Change distance parameter</label>
+							<select class="custom-select" name="distance" id="distance">
+								<option>Kilometers</option>
+								<option>Miles</option>
+							</select>
+							<i class="help-arrow"></i>
+						</div>
+				</div>
+				<div class="distance-slider">
+					<input type="text" id="distance-slider">
+				</div>
+				</div>
+			</div>
+		</div>	
+		<!-- end filters-container -->
+
+		<!-- begin search-results-container  -->
+		<div class="search-results-container">
+			<div class="tags hidden-sm hidden-xs">
+				Search results: <span>254 items</span>
+				<span class="filter-tag">Price range</span>
+				<span class="filter-tag">Distance</span>
+			</div>
+
+			<div class="galery clearfix">
+			
+				<div class="galery-item">
+					<div class="bxslider" id="bxslider1">
+						<img src="img/galery/1.jpg" alt="">
+						<img src="img/galery/2.jpg" alt="">
+						<img src="img/galery/3.jpg" alt="">
+						<img src="img/galery/4.jpg" alt="">
+					</div>
+					<div class="user">
+						<div class="avatar">
+							<img src="img/avatar1.jpg" height="76" width="76" alt="">
+						</div>
+						<div class="text">
+							<h4>The best mountain bikes ever</h4>
+							<p>20 reviews  |  Rating: 7.9</p>
+						</div>
+					</div>
+					<a href="#0" class="wishlist" data-toggle="tooltip" data-placement="bottom" title="Add to Wish List"></a>
+					<div class="price flash">
+						$1,687
+					</div>
+				</div>
+
+				<div class="galery-item">
+					<div class="bxslider">
+						<img src="img/galery/1.jpg" alt="">
+						<img src="img/galery/2.jpg" alt="">
+						<img src="img/galery/3.jpg" alt="">
+						<img src="img/galery/4.jpg" alt="">
+					</div>
+					<div class="user">
+						<div class="avatar">
+							<img src="img/avatar1.jpg" height="76" width="76" alt="">
+						</div>
+						<div class="text">
+							<h4>The best mountain bikes ever</h4>
+							<p>20 reviews  |  Rating: 7.9</p>
+						</div>
+					</div>
+					<a href="#0" class="wishlist" data-toggle="tooltip" data-placement="bottom" title="Add to Wish List"></a>
+					<div class="price flash">
+						$1,687
+					</div>
+				</div>
+
+				<div class="galery-item">
+					<div class="bxslider">
+						<img src="img/galery/1.jpg" alt="">
+						<img src="img/galery/2.jpg" alt="">
+						<img src="img/galery/3.jpg" alt="">
+						<img src="img/galery/4.jpg" alt="">
+					</div>
+					<div class="user">
+						<div class="avatar">
+							<img src="img/avatar1.jpg" height="76" width="76" alt="">
+						</div>
+						<div class="text">
+							<h4>The best mountain bikes ever</h4>
+							<p>20 reviews  |  Rating: 7.9</p>
+						</div>
+					</div>
+					<a href="#0" class="wishlist" data-toggle="tooltip" data-placement="bottom" title="Add to Wish List"></a>
+					<div class="price flash">
+						$1,687
+					</div>
+				</div>
+
+				<div class="galery-item">
+					<div class="bxslider">
+						<img src="img/galery/1.jpg" alt="">
+						<img src="img/galery/2.jpg" alt="">
+						<img src="img/galery/3.jpg" alt="">
+						<img src="img/galery/4.jpg" alt="">
+					</div>
+					<div class="user">
+						<div class="avatar">
+							<img src="img/avatar1.jpg" height="76" width="76" alt="">
+						</div>
+						<div class="text">
+							<h4>The best mountain bikes ever</h4>
+							<p>20 reviews  |  Rating: 7.9</p>
+						</div>
+					</div>
+					<a href="#0" class="wishlist" data-toggle="tooltip" data-placement="bottom" title="Add to Wish List"></a>
+					<div class="price flash">
+						$1,687
+					</div>
+				</div>
+
+				<div class="galery-item">
+					<div class="bxslider">
+						<img src="img/galery/1.jpg" alt="">
+						<img src="img/galery/2.jpg" alt="">
+						<img src="img/galery/3.jpg" alt="">
+						<img src="img/galery/4.jpg" alt="">
+					</div>
+					<div class="user">
+						<div class="avatar">
+							<img src="img/avatar1.jpg" height="76" width="76" alt="">
+						</div>
+						<div class="text">
+							<h4>The best mountain bikes ever</h4>
+							<p>20 reviews  |  Rating: 7.9</p>
+						</div>
+					</div>
+					<a href="#0" class="wishlist" data-toggle="tooltip" data-placement="bottom" title="Add to Wish List"></a>
+					<div class="price flash">
+						$1,687
+					</div>
+				</div>
+
+				<div class="galery-item">
+					<div class="bxslider">
+						<img src="img/galery/1.jpg" alt="">
+						<img src="img/galery/2.jpg" alt="">
+						<img src="img/galery/3.jpg" alt="">
+						<img src="img/galery/4.jpg" alt="">
+					</div>
+					<div class="user">
+						<div class="avatar">
+							<img src="img/avatar1.jpg" height="76" width="76" alt="">
+						</div>
+						<div class="text">
+							<h4>The best mountain bikes ever</h4>
+							<p>20 reviews  |  Rating: 7.9</p>
+						</div>
+					</div>
+					<a href="#0" class="wishlist" data-toggle="tooltip" data-placement="bottom" title="Add to Wish List"></a>
+					<div class="price flash">
+						$1,687
+					</div>
+				</div>
+
+				<div class="galery-item">
+					<div class="bxslider">
+						<img src="img/galery/1.jpg" alt="">
+						<img src="img/galery/2.jpg" alt="">
+						<img src="img/galery/3.jpg" alt="">
+						<img src="img/galery/4.jpg" alt="">
+					</div>
+					<div class="user">
+						<div class="avatar">
+							<img src="img/avatar1.jpg" height="76" width="76" alt="">
+						</div>
+						<div class="text">
+							<h4>The best mountain bikes ever</h4>
+							<p>20 reviews  |  Rating: 7.9</p>
+						</div>
+					</div>
+					<a href="#0" class="wishlist" data-toggle="tooltip" data-placement="bottom" title="Add to Wish List"></a>
+					<div class="price flash">
+						$1,687
+					</div>
+				</div>
+
+				<div class="galery-item">
+					<div class="bxslider">
+						<img src="img/galery/1.jpg" alt="">
+						<img src="img/galery/2.jpg" alt="">
+						<img src="img/galery/3.jpg" alt="">
+						<img src="img/galery/4.jpg" alt="">
+					</div>
+					<div class="user">
+						<div class="avatar">
+							<img src="img/avatar1.jpg" height="76" width="76" alt="">
+						</div>
+						<div class="text">
+							<h4>The best mountain bikes ever</h4>
+							<p>20 reviews  |  Rating: 7.9</p>
+						</div>
+					</div>
+					<a href="#0" class="wishlist" data-toggle="tooltip" data-placement="bottom" title="Add to Wish List"></a>
+					<div class="price flash">
+						$1,687
+					</div>
+				</div>
+
+				
+			</div><!-- galery row -->
+
+			<div class="spinner">
+			  <div class="bounce1"></div>
+			  <div class="bounce2"></div>
+			  <div class="bounce3"></div>
+			  <span>loading...</span>
+			</div>
+		</div>
+		<!-- end search-results-container -->
+
+
+<!-- 		<div class="empty clearfix"></div><!-- empty -->
+ -->	<!-- </div> --><!-- all -->
+
+
+
+
+<footer class="container-fluid footer clearfix search-footer">
+	<div class="fcont">
+		<div class="fdownload">
+		<p>Download the rentitb app and start tenting your items</p>
+		<div class="dlinks">
+			<a href="#"><img src="uploads/images/appstore.png" alt="" /></a>
+			<a href="#"><img src="uploads/images/gplay.png" alt="" /></a>
+		</div><!-- dlinks -->
+	</div><!-- fdownload -->
+
+	<div class="row fbot clearfix">
+		<nav class="fnav">
+			<ul class="fmenu">
+				<li><a href="#">Who we are</a></li>
+				<li><a href="#">How it works</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Trust & Safety</a></li>
+			</ul>                                       
+		</nav>
+			<div class="fcopy">
+				<span>&copy; 2014 rentitb</span>
+				<a href="#" class="tw"></a>
+				<a href="#" class="fb"></a>
+			</div><!-- -->
+		</div><!-- row -->
+	</div><!-- fcont -->
+</footer>
+
+<div id="back-to-top"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
+	<script src="js/jquery.form-validator.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.selectbox.js"></script>
+	<script src="js/custom-form-elements.js"></script>
+	<script src="js/readmore.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqTemOKE7MeNXwdGn4CYaiZvbXN9ueqhA"></script>
+	<script src="js/custom_map.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/waypoints-sticky.min.js"></script>	
+	<script src="fancybox2/jquery.fancybox.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

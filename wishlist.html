@@ -1,0 +1,1369 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>wishlist - rentlib</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
+
+	<link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
+
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div class="all">
+
+		<header class="container-fluid header header-list payment">
+					<div class=" row header-top">
+			<div class="header-top-list clearfix">
+				<a class="logo" href="#">logo</a>
+				<div class="col-md-9 col-md-offset-3 hlinks">
+					<span class="list-btn-wrap">
+						 <button type="button" class="btn btn-danger ">List Your Item</button>
+					</span><!-- list-btn-wrap -->
+					<div class="help">
+					    <div class="btn-group">
+						    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+						        Help
+						        <span class="help-icon"></span>
+						      </button>
+						    <ul class="dropdown-menu">
+						      	<li><a href="#">How do i rent my items on Rentitb?</a></li>
+								<li><a href="#">How can i promote my listing?</a></li>
+								<li><a href="#">How is the wevb is protected?</a></li>
+								<li><a href="#">View all FAQs</a></li>
+								<i class="help-arrow"></i>
+						    </ul>
+					  </div>
+					</div>
+					<div class="avatar-container">
+							<img src="img/avatar.jpg" height="53" width="53" alt="">
+							<div class="btn-group">
+								<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="account">
+							        Ilya Boruhov
+							        <span class="help-icon"></span>
+						        </button>
+						        <ul class="dropdown-menu" area-labelledby="account">
+							      	<li><a href="#">Dashboard</a></li>
+									<li><a href="#">My Listing</a></li>
+									<li><a href="#">Orders to My Listing</a></li>
+									<li><a href="#">My Reservation</a></li>
+									<li><a href="#">Items I've Rent</a></li>
+									<li><a href="#">My Wish Lists</a></li>
+									<hr>
+									<li><a href="#">Language</a></li>
+									<hr>
+									<li><a href="#">Edit Profile</a></li>
+									<li><a href="#">Account</a></li>
+									<li><a href="#">Log Out</a></li>
+									<i class="help-arrow"></i>
+						    	</ul>
+
+					        </div>
+					</div>
+					<div class="pull-right notification">
+						<span class="notif-btn" data-toggle="dropdown" id="notif-btn">
+							<i class="notif-icon"></i>
+							<span class="notif-num">5</span>
+						</span>
+
+						 <ul class="dropdown-menu notif-menu" area-labelledby="notif-btn">
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="ava-block ava-small">
+						  					<img src="uploads/images/i-ava2.jpg" alt="" />
+						  				</span><!-- ava-block -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-star"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+								<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="ava-block ava-small">
+						  					<img src="uploads/images/i-ava2.jpg" alt="" />
+						  				</span><!-- ava-block -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-let"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="nt-img">
+						  					<img src="uploads/images/notif.jpg" alt="" />
+						  				</span><!-- nt-img -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+						  					<span class="nt-text">Did you deliverd your item to Josh?</span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  					<button class="btn btn-primary nt-btn">Yes, I Deliverd</button>
+						  					<button class="btn btn-default nt-btn">No, I Don’t</button>
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-star"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="nt-img">
+						  					<img src="uploads/images/notif.jpg" alt="" />
+						  				</span><!-- nt-img -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+						  					<span class="nt-text">Did you deliverd your item to Josh?</span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  					<button class="btn btn-primary nt-btn">Yes, I Get</button>
+						  					<button class="btn btn-default nt-btn">No, I Don’t</button>
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+
+						      	<li>
+						      		<a href="#" class="notif-mess notif-mess-success">
+						      			<span class="nt-img">
+						  					<img src="uploads/images/notif.jpg" alt="" />
+						  				</span><!-- nt-img -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+						  					<span class="nt-text">The deal was seccessfully approved by two sides!</span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->	
+						  				<i class="hands-s nt-hands"></i>
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li class="nt-bot">
+						      		<a href="#" class="nt-clear">Clear all</a>
+						      	</li>
+						      	<i class="help-arrow"></i>
+						    </ul>
+
+	<!--  this is the category block for notification  -->
+	<!--  tif you want see it - delete style="right: 9999px !important"  -->	
+
+						     <ul class="dropdown-menu notif-menu" area-labelledby="notif-btn" style="right: 9999px !important">
+						      	<li>
+						      		<a href="#" class="notif-cat notif-cat1">
+						      			<span class="nt-cat-label"><i class="nt-cat-let"></i></span><!--  nt-label -->
+						  				<span class="nt-cat-cont">
+						  					<span class="nt-cat-title">3 New Messages</span><!--  nt-title -->	
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  				</span><!--  nt-cont -->					  					
+						      		</a>
+						      	</li>
+
+						      	<li>
+						      		<a href="#" class="notif-cat notif-cat2">
+						      			<span class="nt-cat-label"><i class="nt-cat-com"></i></span><!--  nt-label -->
+						  				<span class="nt-cat-cont">
+						  					<span class="nt-cat-title">5 New Notifications</span><!--  nt-title -->	
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  				</span><!--  nt-cont -->					  					
+						      		</a>
+						      	</li>
+
+						      	<li>
+						      		<a href="#" class="notif-cat notif-cat3">
+						      			<span class="nt-cat-label"><i class="nt-cat-star"></i></span><!--  nt-label -->
+						  				<span class="nt-cat-cont">
+						  					<span class="nt-cat-title">3 New Messages</span><!--  nt-title -->	
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  				</span><!--  nt-cont -->					  					
+						      		</a>
+						      	</li>
+						      	<li class="nt-bot">
+						      		<a href="#" class="nt-clear">Clear all</a>
+						      	</li>
+						      	<i class="help-arrow"></i>
+						    </ul>
+						    
+					</div><!-- notification -->
+					<div id="slide-search" class="slide-search">
+					    <form>
+					        <input class="slide-search__input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+					        <input class="slide-search__submit" type="submit" value="">
+					        <span class="slide-search-icon"></span>
+					    </form>
+					</div>
+					<div class="mobile-search">
+						<input type="text" class="form-control" placeholder="Enter your search here">
+					</div>
+				</div><!-- hlinks -->
+
+
+			</div>
+			</div><!--  header-top  -->
+
+			<div class="hero-text">
+				<h2>All what you wish for</h2>
+				<h3>Some dreams come true</h3>
+			</div>
+
+		<div class="row header-title header-title-dash">
+			<h2 class="header-top-title"></h2>
+			<p class="slogan"></p>
+		</div><!-- header-title -->	
+	</header><!-- header -->
+
+
+
+		<div class="container-fluid userprofile">
+
+			  	<div class="maxw user-profile-content">
+
+			  		<div class="gr-block">
+
+			  		<div class="gr-block-top clearfix">
+
+				  		<h3 class="pull-left">My Wish List</h3>
+
+				  		
+
+				  	</div><!-- gr-block-top -->
+
+				  	<div class="gr-block-cont">
+
+				  		<div class="mylist-block">
+
+				  			<div class="mylist-img">
+
+				  				<img src="uploads/images/tent.jpg" alt="" />
+
+				  			</div><!-- list-img -->
+
+				  			<div class="mylist-cont">
+
+				  				<h3 class="mylist-title">Great camping tents for family for <span class="grn-txt">1,000 NIS</span></h3>
+
+				  				<p class="wish-p">item description orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin consequat vestibulu, consect... </p>
+
+				  			</div><!-- mylist-cont -->
+
+
+
+				  			<div class="myitems-bot">
+
+				  					<button class="btn btn-danger">View Item Page</button>
+
+					  				<a href="#" class="wish-remove">Remove</a>
+
+				  				</div><!-- myitemsbot -->
+
+				  		</div><!-- mylist-block -->
+
+
+
+				  	<div class="mylist-block">
+
+				  			<div class="mylist-img">
+
+				  				<img src="uploads/images/tent.jpg" alt="" />
+
+				  			</div><!-- list-img -->
+
+				  			<div class="mylist-cont">
+
+				  				<h3 class="mylist-title">Great camping tents for family for <span class="grn-txt">1,000 NIS</span></h3>
+
+				  				<p class="wish-p">item description orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin consequat vestibulu, consect... </p>
+
+				  			</div><!-- mylist-cont -->
+
+
+
+				  			<div class="myitems-bot">
+
+				  					<button class="btn btn-danger">View Item Page</button>
+
+					  				<a href="#" class="wish-remove">Remove</a>
+
+				  				</div><!-- myitemsbot -->
+
+				  		</div><!-- mylist-block -->
+
+
+
+				  		<div class="mylist-block">
+
+				  			<div class="mylist-img">
+
+				  				<img src="uploads/images/tent.jpg" alt="" />
+
+				  			</div><!-- list-img -->
+
+				  			<div class="mylist-cont">
+
+				  				<h3 class="mylist-title"><span class="wish-not">Item not avalible</span> - Great camping tents for family for <span class="grn-txt">1,000 NIS</span></h3>
+
+				  				<p class="wish-p">item description orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin consequat vestibulu, consect... </p>
+
+				  			</div><!-- mylist-cont -->
+
+
+
+				  			<div class="myitems-bot">
+
+				  					<button class="btn btn-danger">View Item Page</button>
+
+					  				<a href="#" class="wish-remove">Remove</a>
+
+				  				</div><!-- myitemsbot -->
+
+				  		</div><!-- mylist-block -->
+
+
+
+				  		<div class="mylist-block">
+
+				  			<div class="mylist-img">
+
+				  				<img src="uploads/images/tent.jpg" alt="" />
+
+				  			</div><!-- list-img -->
+
+				  			<div class="mylist-cont">
+
+				  				<h3 class="mylist-title">Great camping tents for family for <span class="grn-txt">1,000 NIS</span></h3>
+
+				  				<p class="wish-p">item description orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin consequat vestibulu, consect... </p>
+
+				  			</div><!-- mylist-cont -->
+
+
+
+				  			<div class="myitems-bot">
+
+				  					<button class="btn btn-danger">View Item Page</button>
+
+					  				<a href="#" class="wish-remove">Remove</a>
+
+				  				</div><!-- myitemsbot -->
+
+				  		</div><!-- mylist-block -->
+
+				  		
+
+				  		
+
+				  	</div><!-- gr-block-cont -->
+
+			  	</div><!-- gr-block -->
+
+			  	</div><!-- user-profile-content -->
+
+			  </div><!--  container user-profile  -->
+
+		
+
+	<div class="empty clearfix"></div><!-- empty -->
+
+</div><!-- all -->
+
+
+
+<footer class="container-fluid footer clearfix">
+
+	<div class="fcont">
+
+		<div class="fdownload">
+
+		<p>Download the rentitb app and start tenting your items</p>
+
+		<div class="dlinks">
+
+			<a href="#"><img src="uploads/images/appstore.png" alt="" /></a>
+
+			<a href="#"><img src="uploads/images/gplay.png" alt="" /></a>
+
+		</div><!-- dlinks -->
+
+	</div><!-- fdownload -->
+
+
+
+	<div class="row fbot clearfix">
+
+		<nav class="fnav">
+
+			<ul class="fmenu">
+
+				<li><a href="#">Who we are</a></li>
+
+				<li><a href="#">How it works</a></li>
+
+				<li><a href="#">Press</a></li>
+
+				<li><a href="#">Privacy</a></li>
+
+				<li><a href="#">Terms</a></li>
+
+				<li><a href="#">Trust & Safety</a></li>
+
+			</ul>                                       
+
+		</nav>
+
+			<div class="fcopy">
+
+				<span>&copy; 2014 rentitb</span>
+
+				<a href="#" class="tw"></a>
+
+				<a href="#" class="fb"></a>
+
+			</div><!-- col-md-3 -->
+
+		</div><!-- row -->
+
+	</div><!-- fcont -->
+
+</footer>
+
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="sign-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+		<a href="#" class="btn sbtn btn-primary"><i class="sfb"></i>Sign up with Facebook</a>
+
+       	<a href="#" class="btn sbtn btn-danger"><i class="sg"></i>Sign up with Google +</a>
+
+      	<p class="bdt">or just</p>
+
+      	<div class="email-reg sign-form-block">
+
+      		<form role="form" id="signForm">
+
+      			 <div class="form-group">
+
+				    <input type="text" class="form-control" placeholder="Enter your name" name="cname" data-validation="required">
+
+				  </div>
+
+      			<div class="form-group">
+
+				    <input type="text" class="form-control" placeholder="Enter your last name" name="lastname" data-validation="required">
+
+				  </div>
+
+			  <div class="form-group">
+
+			    <input type="email" class="form-control" placeholder="Enter your email" name="email" data-validation="required">
+
+			  </div>
+
+			  <div class="form-group">
+
+			    <input type="password" class="form-control" placeholder="Creat your password" name="password" data-validation="required">
+
+			  </div>
+
+			   <div class="form-group">
+
+			    <input type="password" class="form-control" placeholder="Confirm your password" name="pass-confirm" data-validation="required">
+
+			  </div>
+
+			  <div class="checkbox">
+
+   				 <label><input type="checkbox"> Join to Rentitb’s news and updates</label>
+
+  			</div>
+
+  			 <button type="submit" class="btn sbtn btn-danger">Login</button>
+
+			</form>
+
+      	</div><!-- email-reg -->
+
+      	<a class="btn sbtn btn-default" id="sbtn-email"><i class="semail"></i>Sign up with Email</a>
+
+      	<div class="conditions tac">
+
+      		By signing up, I agree to Rentitb's <br> <a href="#">Terms of Service, Privacy Policy</a> and <a href="#">Renter Guarantee Terms.</a>
+
+      	</div><!-- conditions -->
+
+      </div><!-- modal-body -->
+
+      <div class="modal-footer tac">
+
+        <p class="alr">Already have a Rentitb account?</p>
+
+        <a href="#" class="log-link">Login</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal login -->
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title" id="myModalLabel">Login</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+		<a href="#" class="btn sbtn btn-primary"><i class="sfb"></i>Sign up with Facebook</a>
+
+       	<a href="#" class="btn sbtn btn-danger"><i class="sg"></i>Sign up with Google +</a>
+
+      	<p class="bdt">or just</p>
+
+      	<div class="email-reg">
+
+      		<form role="form">
+
+			  <div class="form-group">
+
+			    <input type="email" class="form-control" placeholder="Enter your email">
+
+			  </div>
+
+			  <div class="form-group">
+
+			    <input type="password" class="form-control" placeholder="Enter your password">
+
+			  </div>
+
+			  <div class="checkbox">
+
+   				 <label><input type="checkbox"> Remember me</label>
+
+  			</div>
+
+  			 <button type="submit" class="btn sbtn btn-danger">Login</button>
+
+			</form>
+
+			<p class="tac"><a class="forgot" data-toggle="modal" data-target="#reset-modal">Forgot your password?</a></p>
+
+      	</div><!-- email-reg -->
+
+      </div><!-- modal-body -->
+
+      <div class="modal-footer tac">
+
+        <p class="alr">Not on Rentitb?</p>
+
+        <a href="#" class="log-link">Get start here</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal cancel -->
+
+<div class="modal fade cancel-modal" id="kind-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="modal-header">
+
+        <h2 class="fancy-title">Cancellation Policy - <b>Kind</b></h2>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="fancy-text">
+
+		   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mi blandit, hendrerit ligula sed, aliquet ante.</p>
+
+
+
+			<p>Donec ut ex arcu. Donec faucibus odio quis turpis porta, cursus mollis tellus pulvinar. Aliquam rhoncus sed dolor ut blandit.
+
+			Nulla facilisi. Nulla sapien mauris, ultricies quis molestie id, euismod ut diam. Vestibulum mattis mauris leo, semper tristique arcu imperdiet eget.</p>
+
+
+
+			<p>Aliquam erat volutpat. Integer venenatis luctus justo, et vestibulum enim. Nulla commodo aliquet diam. Vivamus porta pharetra ultrices.</p>
+
+
+
+			<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+
+
+			<p>Mauris interdum nisl id condimentum efficitur. Aenean eu scelerisque elit. Aliquam cursus luctus elit sed suscipit. Sed in efficitur lorem, quis aliquet eros. Nam mollis purus id quam sodales ultrices. In ut libero quis nisi laoreet condimentum id et mauris. Praesent id arcu vitae nisl sagittis pulvinar.</p>
+
+		   </div><!-- fancy-text -->
+
+      </div><!-- modal-body -->
+
+     
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal cancel -->
+
+<div class="modal fade cancel-modal" id="soft-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="modal-header">
+
+        <h2 class="fancy-title">Cancellation Policy - <b>Soft</b></h2>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="fancy-text">
+
+		   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mi blandit, hendrerit ligula sed, aliquet ante.</p>
+
+
+
+			<p>Donec ut ex arcu. Donec faucibus odio quis turpis porta, cursus mollis tellus pulvinar. Aliquam rhoncus sed dolor ut blandit.
+
+			Nulla facilisi. Nulla sapien mauris, ultricies quis molestie id, euismod ut diam. Vestibulum mattis mauris leo, semper tristique arcu imperdiet eget.</p>
+
+
+
+			<p>Aliquam erat volutpat. Integer venenatis luctus justo, et vestibulum enim. Nulla commodo aliquet diam. Vivamus porta pharetra ultrices.</p>
+
+
+
+			<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+
+
+			<p>Mauris interdum nisl id condimentum efficitur. Aenean eu scelerisque elit. Aliquam cursus luctus elit sed suscipit. Sed in efficitur lorem, quis aliquet eros. Nam mollis purus id quam sodales ultrices. In ut libero quis nisi laoreet condimentum id et mauris. Praesent id arcu vitae nisl sagittis pulvinar.</p>
+
+		   </div><!-- fancy-text -->
+
+      </div><!-- modal-body -->
+
+     
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal cancel -->
+
+<div class="modal fade cancel-modal" id="moder-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="modal-header">
+
+        <h2 class="fancy-title">Cancellation Policy - <b>Moderate</b></h2>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="fancy-text">
+
+		   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mi blandit, hendrerit ligula sed, aliquet ante.</p>
+
+
+
+			<p>Donec ut ex arcu. Donec faucibus odio quis turpis porta, cursus mollis tellus pulvinar. Aliquam rhoncus sed dolor ut blandit.
+
+			Nulla facilisi. Nulla sapien mauris, ultricies quis molestie id, euismod ut diam. Vestibulum mattis mauris leo, semper tristique arcu imperdiet eget.</p>
+
+
+
+			<p>Aliquam erat volutpat. Integer venenatis luctus justo, et vestibulum enim. Nulla commodo aliquet diam. Vivamus porta pharetra ultrices.</p>
+
+
+
+			<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+
+
+			<p>Mauris interdum nisl id condimentum efficitur. Aenean eu scelerisque elit. Aliquam cursus luctus elit sed suscipit. Sed in efficitur lorem, quis aliquet eros. Nam mollis purus id quam sodales ultrices. In ut libero quis nisi laoreet condimentum id et mauris. Praesent id arcu vitae nisl sagittis pulvinar.</p>
+
+		   </div><!-- fancy-text -->
+
+      </div><!-- modal-body -->
+
+     
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal cancel -->
+
+<div class="modal fade cancel-modal" id="strict-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="modal-header">
+
+        <h2 class="fancy-title">Cancellation Policy - <b>Strict</b></h2>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="fancy-text">
+
+		   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mi blandit, hendrerit ligula sed, aliquet ante.</p>
+
+
+
+			<p>Donec ut ex arcu. Donec faucibus odio quis turpis porta, cursus mollis tellus pulvinar. Aliquam rhoncus sed dolor ut blandit.
+
+			Nulla facilisi. Nulla sapien mauris, ultricies quis molestie id, euismod ut diam. Vestibulum mattis mauris leo, semper tristique arcu imperdiet eget.</p>
+
+
+
+			<p>Aliquam erat volutpat. Integer venenatis luctus justo, et vestibulum enim. Nulla commodo aliquet diam. Vivamus porta pharetra ultrices.</p>
+
+
+
+			<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+
+
+			<p>Mauris interdum nisl id condimentum efficitur. Aenean eu scelerisque elit. Aliquam cursus luctus elit sed suscipit. Sed in efficitur lorem, quis aliquet eros. Nam mollis purus id quam sodales ultrices. In ut libero quis nisi laoreet condimentum id et mauris. Praesent id arcu vitae nisl sagittis pulvinar.</p>
+
+		   </div><!-- fancy-text -->
+
+      </div><!-- modal-body -->
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal cancel -->
+
+<div class="modal fade cancel-modal" id="not-delivered-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="deliver-header">
+
+        <h3 class="deliver-title">Item Not Delivered!</h3>
+
+      </div>
+
+      <div class="modal-body">
+
+      		<form class="form-deliver">
+
+      			<ul class="deliver-radio">
+
+      				<p>You were supposed to deliverd the “Inflatable water balloon” to Josh. <br>
+
+      				The reasone that you didn’t deliverd the item:</p>
+
+      				<li class="radio-btn">
+
+      					<input type="radio" id="ndr1" name="radioGroup1" class="styled" checked>
+
+      					<label for="ndr1" class="radio-label">I don’t trust  Josh</span>
+
+      				</li>
+
+      				<li class="radio-btn">
+
+      					<input type="radio" id="ndr2" name="radioGroup1" class="styled">
+
+      					<label for="ndr2" class="radio-label">The item is damage / broken / lost</span>
+
+      				</li>
+
+      				<li class="radio-btn">
+
+      					<input type="radio" id="ndr3" name="radioGroup1" class="styled">
+
+      					<label for="ndr3" class="radio-label">I didn’t get it back from the last rent</span>
+
+      				</li>
+
+      				<li class="radio-btn">
+
+      					<input type="radio" id="ndr4" name="radioGroup1" class="styled">
+
+      					<label for="ndr4" class="radio-label">Other</span>
+
+      				</li>
+
+      			</ul>
+
+      			<div class="textarea">
+
+      				<textarea class="form-control" placeholder="Write your reason..."></textarea>
+
+      			</div><!-- textarea -->
+
+      			<button class="btn btn-primary btn-nd">Send</button>
+
+      		</form>
+
+      </div><!-- modal-body -->
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal -->
+
+<div class="modal fade cancel-modal od-modal" id="order-details-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog od-modal-dialog">
+
+    <div class="modal-content fancy-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="deliver-header">
+
+        <h3 class="deliver-title">Order Detailes</h3>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="od-wrapper clearfix bb">
+
+      		<div class="od-left">
+
+      			<div class="mylist-img od-img">
+
+				  	<img src="uploads/images/tent.jpg" width="235" alt="" />
+
+				  	<span class="ava-block ava-mid">
+
+				  		<img src="uploads/images/i-ava3.jpg" alt="" />
+
+				  	</span>
+
+				</div><!-- list-img -->
+
+
+
+				<div class="orderby">
+
+					<span>Order by</span> 
+
+					<a href="#">Amanda</a>
+
+				</div><!-- orderby -->
+
+				
+
+				<div class="raiting-block odl-rate">
+
+					<span class="rating-text">19 reviews</span>
+
+					<span class="rating-stars"><span style="width:95px"></span></span>
+
+				</div><!-- raiting-block -->
+
+
+
+				<a href="#">Contact with Amanda</a>
+
+      		</div><!-- od-left -->
+
+      		<div class="od-right">
+
+      			<div class="order-content ">
+
+      				<h3 class="mylist-title order-title bb">Great camping tents for family for <b class="grn-txt">1,000 NIS</b></h3>
+
+      				<div class="od-cont bb">
+
+      					<h4>Order Details:</h4>
+
+      					<p>Delivery to: <b>Menahem begin 25, Tel Aviv</b> on <b>Tue, Sep 14, 2014</b> at <b>12:00</b></p>
+
+      					<p>Pickup from: <b>Habarzel begin 25, Tel Aviv</b> on <b>Fri, Oct 31, 2014</b> at <b>21:00</b></p>
+
+      					<p>Total rent time: <b>42 dayes.</b></p>
+
+      				</div><!-- od-cont -->
+
+
+
+      				<div class="order-mess">
+
+      					<p class="order-mess-author">Amanda Message:</p>
+
+      					<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc.</p>
+
+      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+      					tempor incididunt ut labore et dolore magna aliqua.</p>
+
+      				</div><!-- order-mess -->
+
+      			</div><!-- order-content -->
+
+      		</div><!-- od-right -->
+
+      	</div><!-- od-wrapper -->
+
+      	<div class="od-bot tar">
+
+      		<button class="btn btn-link">Confirm Order</button>
+
+      		<button class="btn btn-danger">View Item Page</button>
+
+      	</div><!-- od-bot -->
+
+      </div><!-- modal-body -->
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal -->
+
+<div class="modal fade cancel-modal" id="tw-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog wr-modal-dialog">
+
+    <div class="modal-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+      <div class="deliver-header">
+
+        <h3 class="deliver-title">Write a Review</h3>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="towrite-block">
+
+			<div class="tw-author">
+
+				<span class="ava-block ava-mid">
+
+					<img src="uploads/images/i-ava3.jpg" alt="" />
+
+				</span>
+
+			</div><!-- rev-author -->
+
+			<div class="towrite-content">
+
+				<p class="tw-title">Write review on <span>“Electronic Guitar”</span></p>
+
+				<p class="tw-owner">Owner: Natali </p>
+
+			</div><!-- towrite-content -->
+
+		</div><!-- towrite-block -->
+
+
+
+		<div class="mess-reply">
+
+			<form role="form" class="reply-form">
+
+				 <span class="im-ava pull-left">
+
+					<img src="uploads/images/i-ava1.jpg" alt="" />
+
+				</span>
+
+				<div class="full-mess-cont">
+
+					<textarea class="form-control mess-input" placeholder="Write your review..."></textarea>
+
+					<button class="btn btn-primary btn-mid">Send review</button>
+
+				</div>
+
+			</form>
+
+		</div><!-- mess-reply -->
+
+      	
+
+      </div><!-- modal-body -->
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal -->
+
+<div class="modal fade cancel-modal payment-modal" id="edit-payment-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog payment-dialog">
+
+    <div class="modal-content">
+
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+
+        <h3 class="mymodal-title bb">Edit Payment Method</h3>
+
+      <div class="modal-body">
+
+      <form class="pm-form">
+
+				  					<div class="form-group">
+
+				  						<label>Payment type</label>
+
+				  						<span class="pm-text">
+
+				  							<select class="custom-select">
+
+				  								<option>Credit card</option>
+
+				  								<option>Credit card</option>
+
+				  								<option>Credit card</option>
+
+				  								<option>Credit card</option>
+
+				  							</select>
+
+				  						</span>
+
+				  						<span class="cards">
+
+				  							<i class="c-visa"></i>
+
+				  							<i class="c-master"></i>
+
+				  							<i class="c-amex"></i>
+
+				  							<i class="c-discover"></i>
+
+				  							<i class="c-lock"></i>
+
+				  						</span>
+
+				  					</div><!-- form-group -->
+
+
+
+				  					<div class="form-group">
+
+				  						<label>Card number</label>
+
+				  						<span class="pm-text">
+
+				  							<input type="text" class="form-control">
+
+				  						</span>	
+
+				  					</div><!-- form-group -->
+
+
+
+				  					<div class="form-group clearfix">
+
+				  						<label>Card number</label>
+
+				  						<span class="pm-date">
+
+				  							<select class="custom-select">
+
+				  								<option>Month</option>
+
+				  								<option>Month</option>
+
+				  								<option>Month</option>
+
+				  							</select>
+
+				  						</span>	
+
+
+
+				  						<span class="pm-date">
+
+				  							<select class="custom-select">
+
+				  								<option>Month</option>
+
+				  								<option>Month</option>
+
+				  								<option>Month</option>
+
+				  							</select>
+
+				  						</span>	
+
+
+
+				  						<span class="pm-secure">
+
+				  							<label>Security Code</label>
+
+				  							<span class="pm-date">
+
+				  								<input type="text" class="form-control">
+
+				  							</span>
+
+				  							<i class="q-icon">
+
+				  								<span class="mytooltip">
+
+					        					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+					        					<i></i>
+
+					        					</span></i>
+
+				  						</span><!-- pm-secure -->
+
+				  					</div><!-- form-group -->
+
+
+
+				  					<div class="form-group">
+
+				  						<label>Country</label>
+
+				  						<span class="pm-text">
+
+				  							<select class="custom-select">
+
+				  								<option>Russya</option>
+
+				  								<option>Russya</option>
+
+				  								<option>Russya</option>
+
+				  								<option>Russya</option>
+
+				  							</select>
+
+				  						</span><!--  pm-text  -->
+
+				  					</div><!--  form-group  -->
+
+
+
+				  					<div class="form-group">
+
+				  						<label>First Name</label>
+
+				  						<span class="pm-text">
+
+				  							<input type="text" class="form-control">
+
+				  						</span>	
+
+
+
+				  						<label>Last Name</label>
+
+				  						<span class="pm-text">
+
+				  							<input type="text" class="form-control">
+
+				  						</span>	
+
+				  					</div><!-- form-group -->
+
+
+
+				  					<div class="form-group">
+
+				  						<label>First Name</label>
+
+				  						<span class="pm-card">
+
+				  							<input type="text" class="form-control">
+
+				  						</span>
+
+				  						<p class="input-descr">You can nammed your card any name you whant. ek “My Mastercard”</p>
+
+				  					</div><!-- form-group -->
+
+
+
+				  					<div class="form-group">
+
+				  						<label></label>
+
+				  						<button class="btn btn-primary">Add payment</button>
+
+				  					</div><!-- form-group -->
+
+				  				</form>
+
+      	
+
+      </div><!-- modal-body -->
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal photo -->
+
+<div class="modal fade photo-modal" id="photo-modal">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">    
+
+      <div class="modal-body">
+
+        <p>You can upload up to 10 photos.</p>
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary btn-mid">Got It!</button>
+
+      </div>
+
+    </div><!-- /.modal-content -->
+
+  </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal -->
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.form-validator.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.selectbox.js"></script>
+
+	<script src="js/custom-form-elements.js"></script>
+
+	<script src="js/readmore.min.js"></script>
+
+	<script src="js/ion.rangeSlider.min.js"></script>
+
+	<script src="js/jquery.bxslider.min.js"></script>
+
+	<script src="js/waypoints.min.js"></script>
+
+	<script src="js/waypoints-sticky.min.js"></script>	
+
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>

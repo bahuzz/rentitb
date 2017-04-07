@@ -1,0 +1,535 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>rentlib</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<input type="text" id="hidden-text" value="" style="position: fixed;left: -1000px;" />
+<div class="all">
+	<header class="container-fluid header">
+		<div class="row header-top">
+			<a class="logo" href="#">logo</a>	
+			<div class="col-md-9 col-md-offset-3 hlinks">
+				  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#sign-modal">Sign Up</button>
+				  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#login-modal">Login</button>
+				  <div class="btn-group">
+				    <button type="button" class="btn btn-link dropdown-toggle help-btn" data-toggle="dropdown">
+				        Help
+				        <span class="help-icon"></span>
+				      </button>
+				    <ul class="dropdown-menu">
+				      	<li><a href="#">How do i rent my items on Rentitb?</a></li>
+						<li><a href="#">How can i promote my listing?</a></li>
+						<li><a href="#">How is the wevb is protected?</a></li>
+						<li><a href="#">View all FAQs</a></li>
+						<i class="help-arrow"></i>
+				    </ul>
+				  </div>
+
+				  <button type="button" class="btn btn-danger btn-list">List Your Item</button>
+
+			</div><!-- hlinks -->		
+
+		</div><!-- header-top -->	
+
+		<div class="header-title row">
+
+			<h1>Rent whatever YOU want</h1>	
+
+			<p class="slogan">Any time, any where.</p>
+
+		</div><!-- header-title -->	
+
+
+
+		<div class="row header-search">
+
+			<form role="form" class="search-form clearfix">
+
+			    <div class="form-group">
+
+			    	<input type="text" class="s-input" placeholder="What do you want to rent?">
+
+			    	<input type="text" readonly="true" id="datepicker" class="s-input" placeholder="When?" >
+
+			    </div><!-- form-group -->
+
+			  	<input type="submit" class="btn btn-primary s-btn" value="Search">
+
+			</form>
+
+		</div><!-- row header-search -->
+
+
+
+		<div class="tac">
+
+			<button class="btn btn-primary how-btn">How we work</button>
+
+		</div><!-- tac -->
+
+	</header><!-- header -->
+
+
+
+	<div class="container-fluid main-content">
+
+		<h2>Stuff people love to rent <small>Explore it!</small>	</h2>
+
+		<p class=""></p>
+
+		<div class="main-category row">
+
+				<div class="mc-cat kids-cat" style="background: url(img/kids-cat.jpg);">
+
+					<div class="mc-cat-wrapper clearfix">
+
+						<a href="#"><img src="uploads/images/wc1.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc2.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc3.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc4.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc5.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc6.jpg" alt="" /></a>
+
+					</div><!--  -->
+
+					<span class="mc-cat-name">Kids items</span>
+
+				</div><!-- wheels-cat -->
+
+
+
+				<div class="mc-cat wheels-cat" style="background: url(img/wheels-cat.jpg);">
+
+					<div class="mc-cat-wrapper clearfix">
+
+						<a href="#"><img src="uploads/images/wc1.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc2.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc3.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc4.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc5.jpg" alt="" /></a>
+
+						<a href="#"><img src="uploads/images/wc6.jpg" alt="" /></a>
+
+					</div><!--  -->
+
+					<span class="mc-cat-name">On wheels / Vehicles items</span>
+
+				</div><!-- wheels-cat -->
+
+
+
+			<div class="mc-cat music-cat" style="background: url(img/music-cat.jpg);">
+
+				<div class="mc-cat-wrapper clearfix">
+
+					<a href="#"><img src="uploads/images/wc1.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc2.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc3.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc4.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc5.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc6.jpg" alt="" /></a>
+
+				</div><!--  -->
+
+				<span class="mc-cat-name">Music Equipment</span>
+
+			</div><!-- wheels-cat -->
+
+
+
+			<div class="mc-cat outdoor-cat" style="background: url(img/outdoor-cat.jpg);">
+
+				<div class="mc-cat-wrapper clearfix">
+
+					<a href="#"><img src="uploads/images/wc1.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc2.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc3.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc4.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc5.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc6.jpg" alt="" /></a>
+
+				</div><!--  -->
+
+				<span class="mc-cat-name">Outdoor Equipment</span>
+
+			</div><!-- wheels-cat -->
+
+
+
+			<div class="mc-cat mc-two-cat cameras-cat" style="background: url(img/cameras-cat.jpg);">
+
+				<div class="mc-cat-wrapper clearfix">
+
+					<a href="#"><img src="http://placekitten.com/160/190" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc2.jpg" alt="" /></a>
+
+				</div><!--  -->
+
+				<span class="mc-cat-name">Cameras Equipment</span>
+
+			</div><!-- wheels-cat -->
+
+
+
+			<div class="mc-cat mc-two-cat dress-cat" style="background: url(img/dress-cat.jpg);">
+
+				<div class="mc-cat-wrapper clearfix">
+
+					<a href="#"><img src="uploads/images/wc1.jpg" alt="" /></a>
+
+					<a href="#"><img src="uploads/images/wc2.jpg" alt="" /></a>
+
+				</div><!--  -->
+
+				<span class="mc-cat-name">Night Dressing</span>
+
+			</div><!-- wheels-cat -->
+
+		</div><!-- main-category -->
+
+	</div><!-- container-fluid main-content -->
+
+	<div class="empty clearfix"></div><!-- empty -->
+
+</div><!-- all -->
+
+
+
+<footer class="container-fluid footer clearfix">
+
+	<div class="fcont">
+
+		<div class="fdownload">
+
+		<p>Download the rentitb app and start tenting your items</p>
+
+		<div class="dlinks">
+
+			<a href="#"><img src="uploads/images/appstore.png" alt="" /></a>
+
+			<a href="#"><img src="uploads/images/gplay.png" alt="" /></a>
+
+		</div><!-- dlinks -->
+
+	</div><!-- fdownload -->
+
+
+
+	<div class="row fbot clearfix">
+
+		<nav class="fnav">
+
+			<ul class="fmenu">
+
+				<li><a href="#">Who we are</a></li>
+
+				<li><a href="#">How it works</a></li>
+
+				<li><a href="#">Press</a></li>
+
+				<li><a href="#">Privacy</a></li>
+
+				<li><a href="#">Terms</a></li>
+
+				<li><a href="#">Trust & Safety</a></li>
+
+			</ul>                                       
+
+		</nav>
+
+			<div class="fcopy">
+
+				<span>&copy; 2014 rentitb</span>
+
+				<a href="#" class="tw"></a>
+
+				<a href="#" class="fb"></a>
+
+			</div><!-- col-md-3 -->
+
+		</div><!-- row -->
+
+	</div><!-- fcont -->
+
+</footer>
+
+<!-- Modal -->
+
+<div class="modal fade" id="sign-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+		<a href="#" class="btn sbtn btn-primary"><i class="sfb"></i>Sign up with Facebook</a>
+
+       	<a href="#" class="btn sbtn btn-danger"><i class="sg"></i>Sign up with Google +</a>
+
+      	<p class="bdt">or just</p>
+
+      	<div class="email-reg sign-form-block">
+
+      		<form role="form" id="signForm">
+
+      			 <div class="form-group">
+
+				    <input type="text" class="form-control" placeholder="Enter your name" name="cname" data-validation="required">
+
+				  </div>
+
+      			<div class="form-group">
+
+				    <input type="text" class="form-control" placeholder="Enter your last name" name="lastname" data-validation="required">
+
+				  </div>
+
+			  <div class="form-group">
+
+			    <input type="email" class="form-control" placeholder="Enter your email" name="email" data-validation="required">
+
+			  </div>
+
+			  <div class="form-group">
+
+			    <input type="password" class="form-control" placeholder="Creat your password" name="password" data-validation="required">
+
+			  </div>
+
+			   <div class="form-group">
+
+			    <input type="password" class="form-control" placeholder="Confirm your password" name="pass-confirm" data-validation="required">
+
+			  </div>
+
+			  <div class="check-wrapper">
+
+   				 <input type="checkbox" class="styled"> <label class="check-label">Join to Rentitb’s news and updates</label>
+
+  			</div>
+
+  			 <button type="submit" class="btn sbtn btn-danger">Login</button>
+
+			</form>
+
+      	</div><!-- email-reg -->
+
+      	<a class="btn sbtn btn-default" id="sbtn-email"><i class="semail"></i>Sign up with Email</a>
+
+      	<div class="conditions tac">
+
+      		By signing up, I agree to Rentitb's <br> <a href="#">Terms of Service, Privacy Policy</a> and <a href="#">Renter Guarantee Terms.</a>
+
+      	</div><!-- conditions -->
+
+      </div><!-- modal-body -->
+
+      <div class="modal-footer tac">
+
+        <p class="alr">Already have a Rentitb account?</p>
+
+        <a href="#" class="log-link">Login</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal login -->
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title" id="myModalLabel">Login</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+		<a href="#" class="btn sbtn btn-primary"><i class="sfb"></i>Sign up with Facebook</a>
+
+       	<a href="#" class="btn sbtn btn-danger"><i class="sg"></i>Sign up with Google +</a>
+
+      	<p class="bdt">or just</p>
+
+      	<div class="email-reg">
+
+      		<form role="form">
+
+			  <div class="form-group">
+
+			    <input type="email" class="form-control" placeholder="Enter your email">
+
+			  </div>
+
+			  <div class="form-group">
+
+			    <input type="password" class="form-control" placeholder="Enter your password">
+
+			  </div>
+
+			  <div class="check-wrapper">
+
+   				 <input type="checkbox" class="styled"><label class="check-label"> Remember me</label>
+
+  			</div>
+
+  			 <button type="submit" class="btn sbtn btn-danger">Login</button>
+
+			</form>
+
+			<p class="tac"><a class="forgot" data-toggle="modal" data-target="#reset-modal">Forgot your password?</a></p>
+
+      	</div><!-- email-reg -->
+
+      </div><!-- modal-body -->
+
+      <div class="modal-footer tac">
+
+        <p class="alr">Not on Rentitb?</p>
+
+        <a href="#" class="log-link">Get start here</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+
+
+<!-- Modal reset -->
+
+<div class="modal fade" id="reset-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title" id="myModalLabel">Reset Password</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+      	<div class="reset-text tac">
+
+      		Enter the email address associated with
+
+your account, and we'll email you a link to
+
+reset your password.
+
+      	</div><!-- reset-password -->
+
+      	<div class="email-reg">
+
+      		<form role="form">
+
+			  <div class="form-group">
+
+			    <input type="email" class="form-control" placeholder="Enter your email">
+
+			  </div>
+
+  			 <button type="submit" class="btn sbtn btn-danger">Reset my password</button>
+
+			</form>
+
+      	</div><!-- email-reg -->
+
+      </div><!-- modal-body -->
+
+      <div class="modal-footer tac">
+
+        <p class="alr">Change your mind?</p>
+
+        <a href="#" class="log-link">Login</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div><!-- myModal -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.form-validator.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.selectbox.js"></script>
+
+	<script src="js/custom-form-elements.js"></script>
+
+	<script src="js/readmore.min.js"></script>
+
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqTemOKE7MeNXwdGn4CYaiZvbXN9ueqhA"></script>
+
+	<script src="js/custom_map.js"></script>-->
+
+	<script src="js/ion.rangeSlider.min.js"></script>
+
+	<script src="js/jquery.bxslider.min.js"></script>
+
+	<script src="js/waypoints.min.js"></script>
+
+	<script src="js/waypoints-sticky.min.js"></script>		
+
+	<script src="fancybox2/jquery.fancybox.js"></script>
+	
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>

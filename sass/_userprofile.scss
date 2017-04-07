@@ -1,0 +1,42 @@
+/*////////////////  userprofile  ///////////////*/
+.userprofile {
+	padding-top: 40px;
+}
+.aboutme-cont {
+	padding: 20px;
+	p {
+		margin-bottom: 20px;
+		line-height: 1.3em;
+		b {
+			display: block;
+			font-weight: 500;
+		}
+	}
+}
+.user-list-side {
+	position: relative;
+	margin-bottom: 10px;
+	img {
+		padding: 1px;
+		border: 1px solid $bdcolor;
+		-webkit-border-radius: 3px;
+		        border-radius: 3px;
+	}
+	span {
+		position: absolute;
+		color: #FFF;
+		font-size: 16px;
+		bottom: 0px;
+		left: 0;
+		margin: 5%;
+		text-align: center;
+		width: 90%;
+	}
+}
+.uls-wrapper {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.list-btn-wrap {
+	float: right;
+}

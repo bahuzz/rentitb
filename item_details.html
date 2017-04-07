@@ -1,0 +1,791 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>rentlib</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" type="text/css" href="fancybox2/jquery.fancybox.css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<input type="text" id="hidden-text" value="" style="position: fixed;left: -1000px;" />
+<!-- 	<div class="all">
+ -->	<header class="container-fluid item-details">
+			<div class="row header-top top-bar">
+				<a class="logo" href="#">logo</a>
+				<div class="col-md-9 col-md-offset-3 hlinks">
+				<button type="button" class="btn btn-danger btn-list">List Your Item</button>
+					<div class="help">
+					    <div class="btn-group">
+						    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+						        Help
+						        <span class="help-icon"></span>
+						      </button>
+						    <ul class="dropdown-menu">
+						      	<li><a href="#">How do i rent my items on Rentitb?</a></li>
+								<li><a href="#">How can i promote my listing?</a></li>
+								<li><a href="#">How is the wevb is protected?</a></li>
+								<li><a href="#">View all FAQs</a></li>
+								<i class="help-arrow"></i>
+						    </ul>
+					  </div>
+					</div>
+					<div class="avatar-container">
+							<img src="img/avatar.jpg" height="53" width="53" alt="">
+							<div class="btn-group">
+								<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" id="account">
+							        Ilya Boruhov
+							        <span class="help-icon"></span>
+						        </button>
+						        <ul class="dropdown-menu" area-labelledby="account">
+							      	<li><a href="#">Dashboard</a></li>
+									<li><a href="#">My Listing</a></li>
+									<li><a href="#">Orders to My Listing</a></li>
+									<li><a href="#">My Reservation</a></li>
+									<li><a href="#">Items I've Rent</a></li>
+									<li><a href="#">My Wish Lists</a></li>
+									<hr>
+									<li><a href="#">Language</a></li>
+									<hr>
+									<li><a href="#">Edit Profile</a></li>
+									<li><a href="#">Account</a></li>
+									<li><a href="#">Log Out</a></li>
+									<i class="help-arrow"></i>
+						    	</ul>
+
+					        </div>
+					</div>
+					<div class="pull-right notification">
+						<span class="notif-btn" data-toggle="dropdown" id="notif-btn">
+							<i class="notif-icon"></i>
+							<span class="notif-num">5</span>
+						</span>
+
+						 <ul class="dropdown-menu notif-menu" area-labelledby="notif-btn">
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="ava-block ava-small">
+						  					<img src="uploads/images/i-ava2.jpg" alt="" />
+						  				</span><!-- ava-block -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-star"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+								<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="ava-block ava-small">
+						  					<img src="uploads/images/i-ava2.jpg" alt="" />
+						  				</span><!-- ava-block -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-let"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Carolin</b> - New message</span><!--  nt-title -->	
+						  					<span class="nt-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="nt-img">
+						  					<img src="uploads/images/notif.jpg" alt="" />
+						  				</span><!-- nt-img -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+						  					<span class="nt-text">Did you deliverd your item to Josh?</span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  					<button class="btn btn-primary nt-btn">Yes, I Deliverd</button>
+						  					<button class="btn btn-default nt-btn">No, I Don’t</button>
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-star"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li>
+						      		<a href="#" class="notif-mess">
+						      			<span class="nt-img">
+						  					<img src="uploads/images/notif.jpg" alt="" />
+						  				</span><!-- nt-img -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+						  					<span class="nt-text">Did you deliverd your item to Josh?</span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  					<button class="btn btn-primary nt-btn">Yes, I Get</button>
+						  					<button class="btn btn-default nt-btn">No, I Don’t</button>
+						  				</span><!--  nt-cont -->					  					
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+
+						      	<li>
+						      		<a href="#" class="notif-mess notif-mess-success">
+						      			<span class="nt-img">
+						  					<img src="uploads/images/notif.jpg" alt="" />
+						  				</span><!-- nt-img -->
+						  				<span class="nt-cont">
+						  					<span class="nt-title"><b>Delivery</b> - Notification</span><!--  nt-title -->	
+						  					<span class="nt-text">The deal was seccessfully approved by two sides!</span><!--  nt-text -->	
+						  					<span class="nt-date">Sunday, 25 October 2014</span><!--  nt-date -->	
+						  				</span><!--  nt-cont -->	
+						  				<i class="hands-s nt-hands"></i>
+						  				<span class="nt-label"><i class="nt-com"></i></span><!--  nt-label -->
+						      		</a>
+						      	</li>
+						      	<li class="nt-bot">
+						      		<a href="#" class="nt-clear">Clear all</a>
+						      	</li>
+						      	<i class="help-arrow"></i>
+						    </ul>
+
+	<!--  this is the category block for notification  -->
+	<!--  tif you want see it - delete style="right: 9999px !important"  -->	
+
+						     <ul class="dropdown-menu notif-menu" area-labelledby="notif-btn" style="right: 9999px !important">
+						      	<li>
+						      		<a href="#" class="notif-cat notif-cat1">
+						      			<span class="nt-cat-label"><i class="nt-cat-let"></i></span><!--  nt-label -->
+						  				<span class="nt-cat-cont">
+						  					<span class="nt-cat-title">3 New Messages</span><!--  nt-title -->	
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  				</span><!--  nt-cont -->					  					
+						      		</a>
+						      	</li>
+
+						      	<li>
+						      		<a href="#" class="notif-cat notif-cat2">
+						      			<span class="nt-cat-label"><i class="nt-cat-com"></i></span><!--  nt-label -->
+						  				<span class="nt-cat-cont">
+						  					<span class="nt-cat-title">5 New Notifications</span><!--  nt-title -->	
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  				</span><!--  nt-cont -->					  					
+						      		</a>
+						      	</li>
+
+						      	<li>
+						      		<a href="#" class="notif-cat notif-cat3">
+						      			<span class="nt-cat-label"><i class="nt-cat-star"></i></span><!--  nt-label -->
+						  				<span class="nt-cat-cont">
+						  					<span class="nt-cat-title">3 New Messages</span><!--  nt-title -->	
+						  					<span class="nt-cat-text">Lorem ipsum dolor sit amet, consectetur adi... </span><!--  nt-text -->	
+						  				</span><!--  nt-cont -->					  					
+						      		</a>
+						      	</li>
+						      	<li class="nt-bot">
+						      		<a href="#" class="nt-clear">Clear all</a>
+						      	</li>
+						      	<i class="help-arrow"></i>
+						    </ul>
+						    
+					</div><!-- notification -->
+					<div id="slide-search" class="slide-search">
+					    <form>
+					        <input class="slide-search__input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+					        <input class="slide-search__submit" type="submit" value="">
+					        <span class="slide-search-icon"></span>
+					    </form>
+					</div>
+					<div class="mobile-search">
+						<input type="text" class="form-control" placeholder="Enter your search here">
+					</div>
+				</div><!-- hlinks -->
+			</div><!-- top-bar -->
+			<div class="header-pictures clearfix">
+				<div class="left-side">
+					<a href="img/item-details-header-img-1.jpg" class="top-left-image" rel="group"><img src="img/item-details-header-img-1.jpg" alt=""></a>
+                    <a href="img/item-details-header-img-2.jpg" class="bottom-left-image" rel="group"><img src="img/item-details-header-img-2.jpg" alt=""></a>
+				</div>
+				<div class="center-image">
+                    <a href="img/item-details-header-img-3.jpg" rel="group"><img src="img/item-details-header-img-3.jpg" alt=""></a>
+				</div>
+				<div class="right-side">
+					<a href="img/item-details-header-img-4.jpg" class="top-right-image" rel="group"><img src="img/item-details-header-img-4.jpg" alt=""></a>
+					<a href="img/item-details-header-img-5.jpg" class="bottom-right-image" rel="group"><img src="img/item-details-header-img-5.jpg" alt=""></a>
+				</div>
+			</div>
+
+			<div class="userinfo-bg"></div>
+		</header>
+
+		<div class="content-container clearfix">
+			<div class="content">
+				<div class="info clearfix">
+					<div class="info__image">
+						<img src="img/avatar2.jpg" />
+					</div>
+					<div class="info__text">
+						<h3>The best mountain bikes ever</h3>
+						<p>Arthur Thompson  |  San Francisco, CA, United States</p>
+					</div>
+					<div class="info__social clearfix">
+						<a href="#0" class="user-fb"></a>
+						<a href="#0" class="user-tw"></a>
+						<a href="#0" class="ggl"></a>
+					</div>
+					<div class="info__additional">
+						<div class="reviews">156 reviews <span class="rating forstars"><img src="img/icons/stars-icon.png" height="19" width="118" alt=""></span></div>
+						<div class="pickup"><span data-toggle="tooltip" data-placement="bottom" title="You should pick item by yourself">Self Pickup</span></div>
+						<div class="delivery"><span data-toggle="tooltip" data-placement="bottom" title="Owner will bring the item to you">Owner Delivery</span></div>
+					</div>
+				</div><!-- info -->
+
+				<aside class="mobile-search-aside">
+                <div class="order-panel">
+<!-- 				<div class="fixed">
+ -->				<div class="aside__header clearfix">
+					<div class="bg"></div>
+					<div class="aside__price">$5,014Kr<sup>DDK</sup></div>
+					<div class="aside__rate">Per 30 min</div>
+				</div>
+				<div class="aside__form">
+					<form action="" method="post">
+						<div class="input-line clearfix">
+							<label for="start-date">Pickup time</label>
+							<input type="text" id="datepicker3" class="filter_datepicker" placeholder="Start Date">
+							<div class="filter_timepicker">
+								<!-- <input type="text" class="filter_timepicker" id="timepicker3" placeholder="Start Time"> -->
+								<select name="" id="timepicker3" class="custom-select">
+								<option value="1">Start time</option>
+								<option value="00:00">00:00</option>
+								<option value="00:30">00:30</option>
+								<option value="01:00">01:00</option>
+								<option value="01:30">01:30</option>
+								<option value="02:00">02:00</option>
+								<option value="02:30">02:30</option>
+								<option value="03:00">03:00</option>
+								<option value="03:30">03:30</option>
+								<option value="04:00">04:00</option>
+								<option value="04:30">04:30</option>
+								<option value="05:00">05:00</option>
+								<option value="05:30">05:30</option>
+								<option value="06:00">06:00</option>
+								<option value="06:30">06:30</option>
+								<option value="07:00">07:00</option>
+								<option value="07:30">07:30</option>
+								<option value="08:00">08:00</option>
+								<option value="08:30">08:30</option>
+								<option value="09:00">09:00</option>
+								<option value="09:30">09:30</option>
+								<option value="10:00">10:00</option>
+								<option value="10:30">10:30</option>
+								<option value="11:00">11:00</option>
+								<option value="11:30">11:30</option>
+								<option value="12:00">12:00</option>
+								<option value="12:30">12:30</option>
+								<option value="13:00">13:00</option>
+								<option value="13:30">13:30</option>
+								<option value="14:00">14:00</option>
+								<option value="14:30">14:30</option>
+								<option value="15:00">15:00</option>
+								<option value="15:30">15:30</option>
+								<option value="16:00">16:00</option>
+								<option value="16:30">16:30</option>
+								<option value="17:00">17:00</option>
+								<option value="17:30">17:30</option>
+								<option value="18:00">18:00</option>
+								<option value="18:30">18:30</option>
+								<option value="19:00">19:00</option>
+								<option value="19:30">19:30</option>
+								<option value="20:00">20:00</option>
+								<option value="20:30">20:30</option>
+								<option value="21:00">21:00</option>
+								<option value="21:30">21:30</option>
+								<option value="22:00">22:00</option>
+								<option value="22:30">22:30</option>
+								<option value="23:00">23:00</option>
+								<option value="23:30">23:30</option>
+								</select>
+							</div>
+						</div>
+
+
+						<div class="input-line clearfix">
+							<label for="start-date">Return time</label>
+							<input type="text" id="datepicker4" class="filter_datepicker" placeholder="Return Date">
+							<!-- <input type="text" class="filter_timepicker" id="timepicker4" placeholder="Return Time"> -->
+							<div class="filter_timepicker">
+								<!-- <input type="text" class="filter_timepicker" id="timepicker3" placeholder="Start Time"> -->
+								<select name="" id="timepicker4" class="custom-select">
+								<option value="1">Start time</option>
+								<option value="00:00">00:00</option>
+								<option value="00:30">00:30</option>
+								<option value="01:00">01:00</option>
+								<option value="01:30">01:30</option>
+								<option value="02:00">02:00</option>
+								<option value="02:30">02:30</option>
+								<option value="03:00">03:00</option>
+								<option value="03:30">03:30</option>
+								<option value="04:00">04:00</option>
+								<option value="04:30">04:30</option>
+								<option value="05:00">05:00</option>
+								<option value="05:30">05:30</option>
+								<option value="06:00">06:00</option>
+								<option value="06:30">06:30</option>
+								<option value="07:00">07:00</option>
+								<option value="07:30">07:30</option>
+								<option value="08:00">08:00</option>
+								<option value="08:30">08:30</option>
+								<option value="09:00">09:00</option>
+								<option value="09:30">09:30</option>
+								<option value="10:00">10:00</option>
+								<option value="10:30">10:30</option>
+								<option value="11:00">11:00</option>
+								<option value="11:30">11:30</option>
+								<option value="12:00">12:00</option>
+								<option value="12:30">12:30</option>
+								<option value="13:00">13:00</option>
+								<option value="13:30">13:30</option>
+								<option value="14:00">14:00</option>
+								<option value="14:30">14:30</option>
+								<option value="15:00">15:00</option>
+								<option value="15:30">15:30</option>
+								<option value="16:00">16:00</option>
+								<option value="16:30">16:30</option>
+								<option value="17:00">17:00</option>
+								<option value="17:30">17:30</option>
+								<option value="18:00">18:00</option>
+								<option value="18:30">18:30</option>
+								<option value="19:00">19:00</option>
+								<option value="19:30">19:30</option>
+								<option value="20:00">20:00</option>
+								<option value="20:30">20:30</option>
+								<option value="21:00">21:00</option>
+								<option value="21:30">21:30</option>
+								<option value="22:00">22:00</option>
+								<option value="22:30">22:30</option>
+								<option value="23:00">23:00</option>
+								<option value="23:30">23:30</option>
+								</select>
+							</div>
+						</div>
+				</div>
+
+				<div class="aside__details">
+					<label for="delivery-location">Delivery Location</label>
+						<input type="text" class="order-delivery-location" value="Menahem begin 90, Telaviv">
+					<label for="pickup-location">Pickup Location</label>
+					<input type="text" class="order-pickup-location" placeholder="Choose your pickup location">
+				</div>
+
+				<div class="aside__table">
+					<table>
+						<tr>
+							<td>$5,014 Kr<sup>DKK</sup> x 30 min </td>
+							<td>$10,014 Kr<sup>DKK</sup> </td>
+						</tr>
+						<tr>
+							<td>Service fee <span class="info"><span class="mytooltip">
+        					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        					<i></i>
+        				</span></span></td>
+							<td>$1,214 Kr<sup>DKK</sup> </td>
+						</tr>
+						<tr>
+							<td><b>Total</b></td>
+							<td><b>$11,228 Kr<sup>DKK</sup></b></td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="aside__submit">
+					<input type="checkbox" id="form-agree1">
+					<label for="form-agree1"></label>
+					<span>I agree to owner <a href="#0" data-toggle="modal" data-target="#policy-modal">Rules & Policy</a></span>
+					<input type="submit" class="btn" value="Order Item">
+				</div>
+
+				<div class="save">
+					<span>Save to Wish List</span>
+				</div>
+
+				</form>
+				<!-- </div> --><!-- fixed -->
+            </div><!-- order-panel -->
+			</aside>
+
+				<div class="tabs-container clearfix" role="tabpanel">
+
+					 <!-- Nav tabs -->
+					 <div class="nav-tabs-container">
+					 <ul class="nav nav-tabs item-topbar">
+					 	<li class="active" data-toggle="tab"><a href="#description" class="desc-tab" >Description</a></li>
+					 	<li role="presentation"><a href="#owner" class="owner-tab" aria-controls="owner" role="tab" data-toggle="tab">The Owner</a></li>
+					 	<li role="presentation"><a href="#rules" aria-controls="rules" class="rules-tab" role="tab" data-toggle="tab">Item Rules</a></li>
+					 	<li role="presentation"><a href="#reviews" class="reviews-tab" aria-controls="reviews" role="tab" data-toggle="tab">Reviews</a></li>
+					 	<li role="presentation"><a href="#location" class="location-tab" aria-controls="location" role="tab" data-toggle="tab">Item Location</a></li>
+					 </ul>
+					 </div>
+
+					 <!-- Tab panes -->
+					 <div class="tab-pane">
+					 	<div id="description">
+							<p>Proin nec lacus eleifend, consequat orci eget, eleifend diam. Aenean tempus eros justo, ut placerat magna varius et.<br />Duis ligula risus, faucibus eget elit eu, molestie congue lorem. Fusce id massa vel nunc rhoncus maximus. Fusce lobortis semper amet.</p>
+						</div>
+
+						<div id="owner">
+							<div class="owner-info clearfix">
+								<div class="owner-info__image">
+									<img src="img/avatar2.jpg" height="110" width="110" alt="">
+								</div>
+								<div class="owner-info__text">
+									<h3>Meet the owner: Arthur Thompson</h3>
+									<p>Hi lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type...</p>
+									<p class="bio">
+										Location: San Francisco, CA United States<br />
+										Member Since: August 2014
+									</p>
+									<button class="btn btn-primary">Contact Item Owner</button>
+									<a href="#0">View full owner profile</a>
+								</div>
+
+							</div><!-- owner-info -->
+						</div><!-- owner -->
+							
+						<div id="rules">
+							<h3>Item Rules & Policy</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+							<p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the<br />
+							<a href="#0">Read also the web policy</a>
+							</p>
+						</div>
+
+						<div id="reviews">
+							<h3>19 reviews <span class="rating forstars"><img src="img/icons/stars-icon.png" height="19" width="118" alt=""></span></h3>
+							<div class="review-bxslider">
+							<div class="review-container clearfix">
+								<div class="author-image">
+									<img src="img/avatar2.jpg" height="110" width="110" alt="">
+								</div>
+								<div class="review__text">
+									<h3>John <span>August 2014</span></h3>
+									<p class="mask">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolor, quia molestiae, pariatur iure laborum fugiat provident esse accusamus sequi aspernatur velit quae dignissimos nemo inventore veritatis blanditiis quisquam mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolorum blanditiis dicta nemo! Error libero, rerum provident sed iste soluta sequi reprehenderit laborum aspernatur delectus. Consectetur, debitis architecto. Aspernatur, perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat reprehenderit, eaque? Aliquid, minima sequi voluptatem blanditiis. Officiis culpa natus debitis laudantium modi non corporis inventore minima, eaque ab autem ipsum!</p>
+									<!-- <a href="#0" class="review-read-more">Read more</a> -->
+								</div>
+							</div><!-- review-container -->
+
+							<div class="review-container clearfix">
+								<div class="author-image">
+									<img src="img/avatar2.jpg" height="110" width="110" alt="">
+								</div>
+								<div class="review__text">
+									<h3>John <span>August 2014</span></h3>
+									<p class="mask">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolor, quia molestiae, pariatur iure laborum fugiat provident esse accusamus sequi aspernatur velit quae dignissimos nemo inventore veritatis blanditiis quisquam mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolorum blanditiis dicta nemo! Error libero, rerum provident sed iste soluta sequi reprehenderit laborum aspernatur delectus. Consectetur, debitis architecto. Aspernatur, perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat reprehenderit, eaque? Aliquid, minima sequi voluptatem blanditiis. Officiis culpa natus debitis laudantium modi non corporis inventore minima, eaque ab autem ipsum!</p>
+									<!-- <a href="#0" class="review-read-more">Read more</a> -->
+								</div>
+							</div><!-- review-container -->
+
+							<div class="review-container clearfix">
+								<div class="author-image">
+									<img src="img/avatar2.jpg" height="110" width="110" alt="">
+								</div>
+								<div class="review__text">
+									<h3>John <span>August 2014</span></h3>
+									<p class="mask">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolor, quia molestiae, pariatur iure laborum fugiat provident esse accusamus sequi aspernatur velit quae dignissimos nemo inventore veritatis blanditiis quisquam mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolorum blanditiis dicta nemo! Error libero, rerum provident sed iste soluta sequi reprehenderit laborum aspernatur delectus. Consectetur, debitis architecto. Aspernatur, perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat reprehenderit, eaque? Aliquid, minima sequi voluptatem blanditiis. Officiis culpa natus debitis laudantium modi non corporis inventore minima, eaque ab autem ipsum!</p>
+									<!-- <a href="#0" class="review-read-more">Read more</a> -->
+								</div>
+							</div><!-- review-container -->
+
+							<div class="review-container clearfix">
+								<div class="author-image">
+									<img src="img/avatar2.jpg" height="110" width="110" alt="">
+								</div>
+								<div class="review__text">
+									<h3>John <span>August 2014</span></h3>
+									<p class="mask">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolor, quia molestiae, pariatur iure laborum fugiat provident esse accusamus sequi aspernatur velit quae dignissimos nemo inventore veritatis blanditiis quisquam mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolorum blanditiis dicta nemo! Error libero, rerum provident sed iste soluta sequi reprehenderit laborum aspernatur delectus. Consectetur, debitis architecto. Aspernatur, perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat reprehenderit, eaque? Aliquid, minima sequi voluptatem blanditiis. Officiis culpa natus debitis laudantium modi non corporis inventore minima, eaque ab autem ipsum!</p>
+									<!-- <a href="#0" class="review-read-more">Read more</a> -->
+								</div>
+							</div><!-- review-container -->
+							</div><!-- review-bxslider -->
+							<div class="review__pagination clearfix">
+								<ul class="pagination">
+									<li><a href="#0" class="pagination__prev"><</a></li>
+									<li><a href="#0">1</a></li>
+									<li><a href="#0">2</a></li>
+									<li><a href="#0">3</a></li>
+									<li><a href="#0" class="pagination__next">></a></li>
+								</ul>
+							</div>
+						</div><!-- reviews -->
+
+					 </div><!-- tab pane -->
+					
+				</div>
+			</div><!-- content -->
+			<aside class="search-aside">
+                <div class="order-panel">
+<!-- 				<div class="fixed">
+ -->				<div class="aside__header clearfix">
+						<div class="bg"></div>
+						<div class="aside__price">$5,014Kr<sup>DDK</sup></div>
+						<div class="aside__rate">Per 30 min</div>
+					</div>
+					<div class="aside__form">
+						<form action="" method="post">
+							<div class="input-line clearfix">
+								<label for="start-date">Pickup time</label>
+								<input type="text" id="datepicker5" class="filter_datepicker" placeholder="Start Date">
+								<div class="filter_timepicker">
+									<!-- <input type="text" class="filter_timepicker" id="timepicker3" placeholder="Start Time"> -->
+									<select name="" id="timepicker5" class="custom-select">
+									<option value="1">Start time</option>
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+									</select>
+								</div>
+							</div>
+
+
+							<div class="input-line clearfix">
+								<label for="start-date">Return time</label>
+								<input type="text" id="datepicker6" class="filter_datepicker" placeholder="Return Date">
+								<!-- <input type="text" class="filter_timepicker" id="timepicker4" placeholder="Return Time"> -->
+								<div class="filter_timepicker">
+									<!-- <input type="text" class="filter_timepicker" id="timepicker3" placeholder="Start Time"> -->
+									<select name="" id="timepicker6" class="custom-select">
+									<option value="1">Start time</option>
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="aside__details">
+							<label for="delivery-location">Delivery Location</label>
+								<input type="text" class="order-delivery-location" value="Menahem begin 90, Telaviv">
+							<label for="pickup-location">Pickup Location</label>
+							<input type="text" class="order-pickup-location" placeholder="Choose your pickup location">
+						</div>
+
+						<div class="aside__table">
+							<table>
+								<tr>
+									<td>$5,014 Kr<sup>DKK</sup> x 30 min </td>
+									<td>$10,014 Kr<sup>DKK</sup> </td>
+								</tr>
+								<tr>
+									<td>Service fee <span class="info"><span class="mytooltip">
+		        					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		        					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		        					<i></i>
+		        				</span></span></td>
+									<td>$1,214 Kr<sup>DKK</sup> </td>
+								</tr>
+								<tr>
+									<td><b>Total</b></td>
+									<td><b>$11,228 Kr<sup>DKK</sup></b></td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="aside__submit">
+							<input type="checkbox" id="form-agree">
+							<label for="form-agree"></label>
+							<span>I agree to owner <a href="#0" data-toggle="modal" data-target="#policy-modal">Rules & Policy</a></span>
+							<button class="btn btn-primary">Order Item</button>
+						</div>
+
+						<div class="save">
+							<span>Save to Wish List</span>
+						</div>
+
+					</form>
+				<!-- </div> --><!-- fixed -->
+            	</div><!-- order-panel -->
+			</aside>
+		</div><!-- content-container -->
+
+		<div class="container-fluid" id="location">
+		<div class="item-details-hero-map">
+            <section id="cd-google-map">
+                <div id="google-container"></div>
+            </section>
+        </div>
+			
+		</div>
+
+		
+
+		<footer class="container-fluid footer clearfix items-footer">
+	<div class="fcont">
+		<div class="fdownload">
+		<p>Download the rentitb app and start tenting your items</p>
+		<div class="dlinks">
+			<a href="#"><img src="uploads/images/appstore.png" alt="" /></a>
+			<a href="#"><img src="uploads/images/gplay.png" alt="" /></a>
+		</div><!-- dlinks -->
+	</div><!-- fdownload -->
+
+	<div class="row fbot clearfix">
+		<nav class="fnav">
+			<ul class="fmenu">
+				<li><a href="#">Who we are</a></li>
+				<li><a href="#">How it works</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Trust & Safety</a></li>
+			</ul>                                       
+		</nav>
+			<div class="fcopy">
+				<span>&copy; 2014 rentitb</span>
+				<a href="#" class="tw"></a>
+				<a href="#" class="fb"></a>
+			</div><!-- col-md-3 -->
+		</div><!-- row -->
+	</div><!-- fcont -->
+</footer>
+
+<div class="modal payment-modal fade cancel-modal" id="policy-modal" tabindex="-1" role="dialog" aria-labelledby="signLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content fancy-content">
+    	<span class="close-modal-icon" data-dismiss="modal" aria-hidden="true"></span>
+      <div class="modal-header">
+        <h2 class="fancy-title">Rules & Policy</h2>
+      </div>
+      <div class="modal-body">
+      	<div class="fancy-text">
+		   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mi blandit, hendrerit ligula sed, aliquet ante.</p>
+
+			<p>Donec ut ex arcu. Donec faucibus odio quis turpis porta, cursus mollis tellus pulvinar. Aliquam rhoncus sed dolor ut blandit.
+			Nulla facilisi. Nulla sapien mauris, ultricies quis molestie id, euismod ut diam. Vestibulum mattis mauris leo, semper tristique arcu imperdiet eget.</p>
+
+			<p>Aliquam erat volutpat. Integer venenatis luctus justo, et vestibulum enim. Nulla commodo aliquet diam. Vivamus porta pharetra ultrices.</p>
+
+			<p>Pellentesque imperdiet eros risus, fermentum commodo ex consequat ut. Quisque sem velit, suscipit nec tortor et, ornare ultrices nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+			<p>Mauris interdum nisl id condimentum efficitur. Aenean eu scelerisque elit. Aliquam cursus luctus elit sed suscipit. Sed in efficitur lorem, quis aliquet eros. Nam mollis purus id quam sodales ultrices. In ut libero quis nisi laoreet condimentum id et mauris. Praesent id arcu vitae nisl sagittis pulvinar.</p>
+		   </div><!-- fancy-text -->
+      </div><!-- modal-body -->
+    </div>
+  </div>
+</div><!-- myModal -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.form-validator.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.selectbox.js"></script>
+	<script src="js/custom-form-elements.js"></script>
+	<script src="js/readmore.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqTemOKE7MeNXwdGn4CYaiZvbXN9ueqhA"></script>
+	<script src="js/custom_map.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/waypoints-sticky.min.js"></script>
+	<script src="fancybox2/jquery.fancybox.js"></script>	
+	<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
